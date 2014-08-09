@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>clonespy</id>
+    <title>CloneSpy</title>
+    <version>3.13</version>
+    <authors>CloneSpy</authors>
+    <owners>Windos</owners>
+    <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
+    <description>CloneSpy can help you free up hard drive space by detecting and removing duplicate files. Duplicate files have exactly the same contents regardless of their name, date, time and location. Also, CloneSpy is able to find files that are not exactly identical, but have the same file name. Perhaps you have different versions of a file and you want to find all of them and remove the older versions. CloneSpy can also find zero length files. These are files that have no content.</description>
+    <projectUrl>http://www.clonespy.com</projectUrl>
+    <tags>clonespy,duplicate,dedupe,data,file storage,cleanup</tags>
+    <copyright>CloneSpy</copyright>
+    <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/Windos/clonespy/master/clonespy.png</iconUrl>
+    <releaseNotes>http://www.clonespy.com/?History</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
