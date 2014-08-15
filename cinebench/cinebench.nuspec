@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>cinebench</id>
+    <title>MAXON CINEBENCH</title>
+    <version>15.0.0.20140816</version>
+    <authors>MAXON Computer</authors>
+    <owners>Windos</owners>
+    <summary>CINEBENCH is a real-world cross platform test suite that evaluates your computer's performance capabilities.</summary>
+    <description>CINEBENCH is a real-world cross platform test suite that evaluates your computer's performance capabilities. CINEBENCH is based on MAXON's award-winning animation software CINEMA 4D, which is used extensively by studios and production houses worldwide for 3D content creation. MAXON software has been used in blockbuster movies such as Iron Man 3, Oblivion, Life of Pi or Prometheus and many more.
+
+    CINEBENCH is the perfect tool to compare CPU and graphics performance across various systems and platforms.
+	
+	Only compatible with 64-bit Operating Systems.</description>
+    <projectUrl>http://www.maxon.net/products/cinebench</projectUrl>
+    <tags>cinebench maxon benchmark</tags>
+    <copyright>Copyright MAXON Computer GmbH, MAXON Computer Inc., MAXON Computer Ltd.</copyright>
+    <licenseUrl>http://www.maxon.net/fileadmin/maxon/about/eula/MAXON_EULA_2013_EN.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/Windos/chocolatey/master/cinebench/cinebech.png</iconUrl>
+    <releaseNotes>http://www.maxon.net/en/news/press-releases/singleview/article/maxon-cinebench-r15-available-immediately-for-download.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
