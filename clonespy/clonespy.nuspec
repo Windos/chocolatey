@@ -14,7 +14,7 @@
     <copyright>CloneSpy</copyright>
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/Windos/clonespy/master/clonespy.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy.png</iconUrl>
     <releaseNotes>http://www.clonespy.com/?History</releaseNotes>
   </metadata>
   <files>

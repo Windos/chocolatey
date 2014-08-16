@@ -14,7 +14,7 @@
     <copyright>Copyright © 2014 VMware, Inc. All rights reserved.</copyright>
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/Windos/vmware-horizon-client/master/vmware-horizon-client.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
     <releaseNotes>https://www.vmware.com/support/viewclients/doc/horizon-client-windows-release-notes.html</releaseNotes>
   </metadata>
 </package>
