@@ -4,17 +4,26 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>3.2.0</version>
+    <version>3.3.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows dekstop computers.</summary>
-    <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 8 and 8.1, Windows 7, Windows Vista, and Windows XP systems.</description>
+    <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 8 and 8.1, Windows 7 systems.</description>
     <projectUrl>http://www.vmware.com/products/horizon-view</projectUrl>
     <tags>vmware horizon view client virtual-machine vdi</tags>
     <copyright>Copyright © 2014 VMware, Inc. All rights reserved.</copyright>
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
-    <releaseNotes>https://www.vmware.com/support/viewclients/doc/horizon-client-windows-release-notes.html</releaseNotes>
+    <releaseNotes>The 3.3 release of Horizon Client for Windows includes the following new features:
+
+* Support for x86-based tablets such as Windows Surface Pro
+* Smart cards for logging in to RDS desktops and hosted applications
+* Support for IPv6 networks
+* USB redirection of mass storage devices on RDS desktops and hosted applications
+* Support discontinued for Windows XP and Windows Vista as client operating systems
+* SSL v3.0 disabled by default
+	
+[Full release notes](https://www.vmware.com/support/viewclients/doc/horizon-client-windows-release-notes.html)</releaseNotes>
   </metadata>
 </package>
