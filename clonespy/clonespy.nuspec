@@ -16,7 +16,7 @@
     <copyright>CloneSpy</copyright>
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-icon.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
     <releaseNotes>* Added: If you push the "Delete all marked files" button in the Zero length files window or Single duplicates window without first marking any file then an explanation is given on how to mark files.
 * Modified: Optimized the memory management so that now more of the available memory can be used.
 * Modified: Optimized the structure of the checksum database leading to the effect that your database needs to be rebuilt (previously cached checksums will be recreated).
