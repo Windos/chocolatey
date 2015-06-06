@@ -4,10 +4,10 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>3.3.0</version>
+    <version>3.4.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
-    <summary>Client application used to connect to virtual desktops from Windows dekstop computers.</summary>
+    <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
     <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 8 and 8.1, Windows 7 systems.</description>
     <projectUrl>http://www.vmware.com/products/horizon-view</projectUrl>
     <tags>vmware horizon view client virtual-machine vdi</tags>
@@ -17,12 +17,14 @@
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
     <releaseNotes>The 3.3 release of Horizon Client for Windows includes the following new features:
 
-* Support for x86-based tablets such as Windows Surface Pro
-* Smart cards for logging in to RDS desktops and hosted applications
-* Support for IPv6 networks
-* USB redirection of mass storage devices on RDS desktops and hosted applications
-* Support discontinued for Windows XP and Windows Vista as client operating systems
-* SSL v3.0 disabled by default
+* Client drive redirection 
+* Serial port redirection
+* Support for Windows Media Multimedia Redirection (MMR) for RDS desktops
+* Linux remote desktops
+* Usability enhancements when using multiple monitors
+* Shade menu bar can be repositioned
+* Temporary removal of FIPS mode support
+  * For security reasons, this release does not support FIPS (Federal Information Processing Standard) mode. **If your company requires that clients be FIPS-enabled, do not upgrade to Horizon Client 3.4.** Wait for a future release.
 	
 [Full release notes](https://www.vmware.com/support/viewclients/doc/horizon-client-windows-release-notes.html)</releaseNotes>
   </metadata>
