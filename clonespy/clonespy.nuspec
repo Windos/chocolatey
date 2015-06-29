@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.2</version>
+    <version>3.21</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
@@ -17,19 +17,11 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Added: If you push the "Delete all marked files" button in the Zero length files window or Single duplicates window without first marking any file then an explanation is given on how to mark files.
-* Modified: Optimized the memory management so that now more of the available memory can be used.
-* Modified: Optimized the structure of the checksum database leading to the effect that your database needs to be rebuilt (previously cached checksums will be recreated).
-* Modified: If you scan a large number of files then the percentages in the scan progress window now have decimal places.
-* Modified: Opening and closing a large number of categories in the All duplicates window are now faster.
-* Modified: Marking a large number of files in the All duplicates window is now faster.
-* Modified: The upper limit for the size of scanned files is now deactivated by default (see Time + Size page of the Options window).
-* Fixed: If you have a large checksum database then CloneSpy no longer freezes for some time when you open the Options window.
-* Fixed: The Options window no longer freezes while the checksum database is being cleaned up (see Database page of the Options window).
-* Fixed: In the Options, if "Make new file" or "Replace file" is selected then the corresponding file name may no longer be erased.
-* Fixed: The Single duplicates window no longer shows files that were already deleted manually by the user during the scan.
-* Fixed: Corrected the original file name in the version information of the installer.
-	
+    <releaseNotes>* Added: In two-pool mode, the colors that highlight files from pool 1 and 2 in the Result presentation windows can now be changed by a right-click on the corresponding legend.
+* Added: More dialogs can now be configured to never show up again.
+* Fixed: Unnecessary system messages are no longer shown if deletion of files fails.
+* Fixed: Added an explanation for the formerly unknown error code 206.
+
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
   </metadata>
   <files>
