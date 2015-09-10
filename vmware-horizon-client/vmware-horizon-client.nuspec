@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>3.4.0</version>
+    <version>3.5.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -15,17 +15,17 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
-    <releaseNotes>The 3.3 release of Horizon Client for Windows includes the following new features:
+    <releaseNotes>The 3.5 release of Horizon Client for Windows includes the following new features:
 
-* Client drive redirection 
-* Serial port redirection
-* Support for Windows Media Multimedia Redirection (MMR) for RDS desktops
-* Linux remote desktops
-* Usability enhancements when using multiple monitors
-* Shade menu bar can be repositioned
-* Temporary removal of FIPS mode support
-  * For security reasons, this release does not support FIPS (Federal Information Processing Standard) mode. **If your company requires that clients be FIPS-enabled, do not upgrade to Horizon Client 3.4.** Wait for a future release.
+* Open local files with remote applications
+* Windows 10 support for remote desktops and local client system
+* Expanded Microsoft Lync support
+* TLSv1.2 enabled by default
+* OpenSSL 1.0.2d support
+* Support for 4K resolution for the remote desktop or application
+* Virtual printing changes
+* Access Point integration
 	
-[Full release notes](https://www.vmware.com/support/viewclients/doc/horizon-client-windows-release-notes.html)</releaseNotes>
+[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-release-notes.html)</releaseNotes>
   </metadata>
 </package>
