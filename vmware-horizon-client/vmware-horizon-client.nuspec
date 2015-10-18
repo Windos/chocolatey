@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
@@ -10,6 +10,7 @@
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
     <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 8 and 8.1, Windows 7 systems.</description>
     <projectUrl>http://www.vmware.com/products/horizon-view</projectUrl>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/vmware-horizon-client</packageSourceUrl>
     <tags>vmware horizon view client virtual-machine vdi</tags>
     <copyright>Copyright © 2014 VMware, Inc. All rights reserved.</copyright>
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
@@ -25,4 +26,7 @@
 	
 [Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-release-notes.html)</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
