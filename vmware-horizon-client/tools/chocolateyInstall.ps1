@@ -5,7 +5,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = 'vmware-horizon-client'
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-  fileType      = msi
+  fileType      = 'exe'
   url           = 'https://download3.vmware.com/software/view/viewclients/CART15Q3/VMware-Horizon-View-Client-x86-3.5.2-3150477.exe'
   url64bit      = 'https://download3.vmware.com/software/view/viewclients/CART15Q3/VMware-Horizon-View-Client-x86_64-3.5.2-3150477.exe'
 
