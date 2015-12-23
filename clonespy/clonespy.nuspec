@@ -12,7 +12,8 @@
 	
 	CloneSpy is available in both 32-bit and 64-bit versions. The appropriate version for your system will be installed automatically.</description>
     <projectUrl>http://www.clonespy.com</projectUrl>
-    <tags>clonespy duplicate dedupe data file-storage cleanup</tags>
+	<packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/clonespy</packageSourceUrl>
+    <tags>clonespy duplicate dedupe data file-storage cleanup admin</tags>
     <copyright>CloneSpy</copyright>
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,6 +21,8 @@
     <releaseNotes>* Fixed: CloneSpy no longer fails to move files to the recycle bin or another folder on Windows XP (regression since v3.21).
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
+	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
+	<bugTrackerUrl>mailto:technical@clonespy.com</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
