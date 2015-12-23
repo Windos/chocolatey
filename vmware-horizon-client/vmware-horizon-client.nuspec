@@ -11,7 +11,7 @@
     <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 8 and 8.1, Windows 7 systems.</description>
     <projectUrl>http://www.vmware.com/products/horizon-view</projectUrl>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/vmware-horizon-client</packageSourceUrl>
-    <tags>vmware horizon view client virtual-machine vdi</tags>
+    <tags>vmware horizon view client virtual-machine vdi admin</tags>
     <copyright>Copyright © 2014 VMware, Inc. All rights reserved.</copyright>
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -25,6 +25,8 @@
 * This release contains bug fixes.
 	
 [Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-release-notes.html)</releaseNotes>
+	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
+	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
