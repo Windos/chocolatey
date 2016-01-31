@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.22</version>
+    <version>3.23</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
@@ -18,11 +18,14 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Fixed: CloneSpy no longer fails to move files to the recycle bin or another folder on Windows XP (regression since v3.21).
+    <releaseNotes>* Modified: Exchanged "+" by "&amp;" in the Main window to clarify the meaning of the "Search for" options.
+* Fixed: The 64-bit version no longer crashes when clicking the list header in the Zero length files window or the Single duplicates window.
+* Fixed: CloneSpy no longer crashes when scanning long paths on network drives.
+* Fixed: Added an explanation for the formerly unknown error code 183.
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
 	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
-	<bugTrackerUrl>mailto:technical@clonespy.com</bugTrackerUrl>
+	<bugTrackerUrl>http://www.clonespy.com/?Contact</bugTrackerUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
