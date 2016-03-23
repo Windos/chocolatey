@@ -6,16 +6,16 @@ $packageArgs = @{
   packageName   = 'vmware-horizon-client'
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   fileType      = 'exe'
-  url           = 'https://download3.vmware.com/software/view/viewclients/CART15Q3/VMware-Horizon-View-Client-x86-3.5.2-3150477.exe'
-  url64bit      = 'https://download3.vmware.com/software/view/viewclients/CART15Q3/VMware-Horizon-View-Client-x86_64-3.5.2-3150477.exe'
+  url           = 'https://download3.vmware.com/software/view/viewclients/CART16Q1/VMware-Horizon-Client-x86-4.0.0-3677815.exe'
+  url64bit      = 'https://download3.vmware.com/software/view/viewclients/CART16Q1/VMware-Horizon-Client-x86_64-4.0.0-3677815.exe'
 
   silentArgs    = '/S /V"/qn REBOOT=Reallysuppress"'
   validExitCodes= @(0, 3010, 1641)
 
   softwareName  = 'vmware-horizon-client*'
-  checksum      = 'b934a3b1f0e0ebddbc87cdd602fb332c'
+  checksum      = '630d7c339a4c76918d3f8b736c3cd0cf'
   checksumType  = 'md5'
-  checksum64    = '5b45412098b76d29eeca3459490dc75e'
+  checksum64    = 'ba945431043999a3811b62f313973d2d'
   checksumType64= 'md5'
 }
 
