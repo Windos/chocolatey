@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.0.0</version>
+    <version>4.0.1</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -16,16 +16,8 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
-    <releaseNotes>* VMware Blast Extreme
-* High Resolution Display Scaling
-* Client drive redirection feature enhancements
-* URL Content Redirection
-* Flash Redirection (Tech Preview)
-* Support for Windows Server 2012 as a client
-* Multiple monitors in different modes
-* TLSv1.0 disabled by default
-* OpenSSL 1.0.2f support
-* Tunnel connection performance improvement
+    <releaseNotes>* TLSv1.0 is enabled by default
+    * Enabling TLSv1.0 ensures that by default Horizon Client can connect to VMware Horizon Air servers. You do not need to upgrade to Horizon Client 4.0.1 unless you use Horizon Client to connect to Horizon Air cloud-hosted desktops and applications.
 
 [Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
