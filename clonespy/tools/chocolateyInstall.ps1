@@ -1,6 +1,6 @@
 ﻿$packageName = 'clonespy'
 $installerType = 'EXE'
-$url = 'http://www.clonespy.com/english/download/cspy323.exe'
+$url = 'http://www.clonespy.com/english/download/cspy324.exe'
 $silentArgs = '/S /NODESKTOPSHORTCUT /X64'
 $validExitCodes = @(0)
 

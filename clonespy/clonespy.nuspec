@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.23</version>
+    <version>3.24</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
@@ -18,10 +18,14 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Modified: Exchanged "+" by "&amp;" in the Main window to clarify the meaning of the "Search for" options.
-* Fixed: The 64-bit version no longer crashes when clicking the list header in the Zero length files window or the Single duplicates window.
-* Fixed: CloneSpy no longer crashes when scanning long paths on network drives.
-* Fixed: Added an explanation for the formerly unknown error code 183.
+    <releaseNotes>* Added: After CloneSpy has deleted a file, it can now automatically remove additional files specified in the Options from an otherwise empty folder (see Deletion page of the Options window).
+* Added: The new command line option -u can be used to disable the automatic check for new versions on program start.
+* Modified: The default format to explore files now highlights the respective file in the File Explorer (see Report page of the Options window).
+* Modified: Improved database error messages.
+* Fixed: Some file dialogs did not remember the last visited folder correctly.
+* Fixed: Error messages now correctly reflect that CloneSpy can only support file paths up to a length of 258 characters.
+* Fixed: In the All duplicates window files can now be marked based on their path length when searching for files with the same name.
+* Fixed: When merging CSC-files now all duplicate entries are removed.
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
 	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
