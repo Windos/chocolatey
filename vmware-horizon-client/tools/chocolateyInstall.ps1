@@ -6,8 +6,8 @@ $packageArgs = @{
   packageName   = 'vmware-horizon-client'
   unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   fileType      = 'exe'
-  url           = 'https://download3.vmware.com/software/view/viewclients/CART16Q1_2/VMware-Horizon-Client-x86-4.0.1-3698521.exe'
-  url64bit      = 'https://download3.vmware.com/software/view/viewclients/CART16Q1_2/VMware-Horizon-Client-x86_64-4.0.1-3698521.exe'
+  url           = 'https://download3.vmware.com/software/view/viewclients/CART16Q2/VMware-Horizon-Client-x86-4.1.0-3977225.exe'
+  url64bit      = 'https://download3.vmware.com/software/view/viewclients/CART16Q2/VMware-Horizon-Client-x86_64-4.1.0-3977225.exe'
 
   silentArgs    = '/S /V"/qn REBOOT=Reallysuppress"'
   validExitCodes= @(0, 3010, 1641)

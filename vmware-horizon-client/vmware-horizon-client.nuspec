@@ -4,11 +4,11 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.0.1</version>
+    <version>4.1.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 8 and 8.1, Windows 7 systems.</description>
+    <description>VMware Horizon View Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.</description>
     <projectUrl>http://www.vmware.com/products/horizon-view</projectUrl>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/vmware-horizon-client</packageSourceUrl>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
@@ -16,10 +16,21 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
-    <releaseNotes>* TLSv1.0 is enabled by default
-    * Enabling TLSv1.0 ensures that by default Horizon Client can connect to VMware Horizon Air servers. You do not need to upgrade to Horizon Client 4.0.1 unless you use Horizon Client to connect to Horizon Air cloud-hosted desktops and applications.
+    <releaseNotes>* Full support of Flash Redirection
+    * For specific URLs, Flash content in an Internet Explorer browser is sent to the Windows-based client and played in a Flash container window, thereby offloading demand on the ESXi host. Configuration is done through group policy. This feature also requires Horizon Agent 7.0 or later.
+* Command-line interface enhancement
+    * Enhancement to Horizon Client's Command-line interface to allow the launcher to be visible after launching an application.
+* Automatic upgrade
+    * Horizon Client can be upgraded through the user interface.
+* Client device authentication
+    * The device that Horizon Client runs on can be authenticated.
+* Support for login as current user in a nested environment
+    * In a nested environment (Horizon Client running on a Horizon desktop and accessing another Horizon application or desktop), users can login as current user.
+* Launching multiple Horizon Client instances using URI
+* OpenSSL 1.0.2h support
+    * The OpenSSL library is updated to version openssl-1.0.2h.
 
-[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-release-notes.html)</releaseNotes>
+[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-41-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
   </metadata>
