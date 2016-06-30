@@ -13,9 +13,9 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1641)
 
   softwareName  = 'vmware-horizon-client*'
-  checksum      = 'b8924ae95437865203243f06fd05f82e'
+  checksum      = '28839eadfaba594f5cf0cf62f4d8c830'
   checksumType  = 'md5'
-  checksum64    = '58e1b8ff513aafe2a4ce2d8955d76ace'
+  checksum64    = '3ca893d2bce82e0703b9d50c863350b1'
   checksumType64= 'md5'
 }
 
