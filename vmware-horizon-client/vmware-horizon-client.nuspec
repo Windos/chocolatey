@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.1.0</version>
+    <version>4.2.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -15,22 +15,21 @@
     <copyright>Copyright © 2014 VMware, Inc. All rights reserved.</copyright>
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client.png</iconUrl>
-    <releaseNotes>* Full support of Flash Redirection
-    * For specific URLs, Flash content in an Internet Explorer browser is sent to the Windows-based client and played in a Flash container window, thereby offloading demand on the ESXi host. Configuration is done through group policy. This feature also requires Horizon Agent 7.0 or later.
-* Command-line interface enhancement
-    * Enhancement to Horizon Client's Command-line interface to allow the launcher to be visible after launching an application.
-* Automatic upgrade
-    * Horizon Client can be upgraded through the user interface.
-* Client device authentication
-    * The device that Horizon Client runs on can be authenticated.
-* Support for login as current user in a nested environment
-    * In a nested environment (Horizon Client running on a Horizon desktop and accessing another Horizon application or desktop), users can login as current user.
-* Launching multiple Horizon Client instances using URI
-* OpenSSL 1.0.2h support
-    * The OpenSSL library is updated to version openssl-1.0.2h.
+    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
+    <releaseNotes>* DPI Synchronization 
+    * The DPI Synchronization feature ensures that the remote desktop's DPI setting matches the client machine's DPI setting for new remote sessions. This feature is enabled by default. An administrator can disable this feature by disabling the Horizon Agent DPI Synchronization group policy setting. For more information, see "Horizon Agent Configuration ADM Template Settings" in Setting Up Desktop and Application Pools in View.
+* Configure Real-Time Audio-Video settings in Horizon Client
+    * You can now select your preferred webcam and microphone in the Horizon Client Settings dialog box.
+* Physical client information is sent to remote desktops in a double-hop scenario 
+    * If Horizon Client is running inside of a remote desktop session, it sends some physical client information (instead of virtual machine information) to the remote desktop. For information about the physical client information that Horizon Client sends to the second-hop desktop, see "Client System Information Sent to Remote Desktops" in Setting Up Desktop and Application Pools in View.
+* Username hint field support for smart card authentication 
+    * Smart card users that use a single smart card certificate to authenticate to multiple user accounts can enter their user name in the Username hint field in the Horizon Client login dialog box during smart card sign-in. To make the Username hint field appear on the Horizon Client login dialog box, an administrator must enable the smart card user name hints feature for the Connection Server instance. This feature also requires Horizon 7 version 7.0.2.
+* Pass command-line arguments when launching a remote application from a URI 
+    * You can use the args query to pass command-line arguments when you launch a remote application from a URI.
+* Spanish language support
+    * Both the Horizon Client for Windows user interface and the documentation are now available in Spanish.
 
-[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-41-release-notes.html)</releaseNotes>
+[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-42-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
   </metadata>
