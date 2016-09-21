@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.24</version>
+    <version>3.30</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
@@ -18,14 +18,15 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Added: After CloneSpy has deleted a file, it can now automatically remove additional files specified in the Options from an otherwise empty folder (see Deletion page of the Options window).
-* Added: The new command line option -u can be used to disable the automatic check for new versions on program start.
-* Modified: The default format to explore files now highlights the respective file in the File Explorer (see Report page of the Options window).
-* Modified: Improved database error messages.
-* Fixed: Some file dialogs did not remember the last visited folder correctly.
-* Fixed: Error messages now correctly reflect that CloneSpy can only support file paths up to a length of 258 characters.
-* Fixed: In the All duplicates window files can now be marked based on their path length when searching for files with the same name.
-* Fixed: When merging CSC-files now all duplicate entries are removed.
+    <releaseNotes>* Added: The Main window is now resizable.
+* Added: Added new search options to the Main window.
+* Modified: Replaced some radio buttons with drop-down lists to make room for the new search options.
+* Modified: The checksum database journal file is now kept permanently for performance reasons.
+* Modified: Changed the order of buttons in several dialogs to be consistent with the standard button order in Windows.
+* Modified: Moved all context help buttons from the window title bars to the lower right corner of the corresponding dialogs.
+* Modified: The Size of main CloneSpy window option now only changes the Main window size at start-up (see Priority page of the Options window).
+* Modified: In the default format for exporting lists of equal files, file time now appears before file path.
+* Fixed: The Copy/Move Dialog Box on Windows 8 and higher is now suppressed.
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
 	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
