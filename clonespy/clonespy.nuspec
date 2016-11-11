@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.30</version>
+    <version>3.31</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
@@ -18,15 +18,12 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Added: The Main window is now resizable.
-* Added: Added new search options to the Main window.
-* Modified: Replaced some radio buttons with drop-down lists to make room for the new search options.
-* Modified: The checksum database journal file is now kept permanently for performance reasons.
-* Modified: Changed the order of buttons in several dialogs to be consistent with the standard button order in Windows.
-* Modified: Moved all context help buttons from the window title bars to the lower right corner of the corresponding dialogs.
-* Modified: The Size of main CloneSpy window option now only changes the Main window size at start-up (see Priority page of the Options window).
-* Modified: In the default format for exporting lists of equal files, file time now appears before file path.
-* Fixed: The Copy/Move Dialog Box on Windows 8 and higher is now suppressed.
+    <releaseNotes>* Added: When exporting a list of equal files (see Export tab of the Options window) or a CSC-file (see the Export CSC-file window), numbers can now be separated into digit groups.
+* Modified: File sizes in the log file are now separated into digit groups.
+* Modified: When searching for duplicates, the progress bars in the scan progress window now advance more linear on average data.
+* Fixed: The context help now works for the drop-down boxes in the Main window.
+* Fixed: When exporting a list of equal files with aligned columns (see Export tab of the Options window), trailing spaces are no longer generated.
+* Fixed: Copying Cyrillic characters to the clipboard no longer fails.
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
 	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
