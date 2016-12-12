@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.2.0</version>
+    <version>4.3.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -16,20 +16,26 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
-    <releaseNotes>* DPI Synchronization 
-    * The DPI Synchronization feature ensures that the remote desktop's DPI setting matches the client machine's DPI setting for new remote sessions. This feature is enabled by default. An administrator can disable this feature by disabling the Horizon Agent DPI Synchronization group policy setting. For more information, see "Horizon Agent Configuration ADM Template Settings" in Setting Up Desktop and Application Pools in View.
-* Configure Real-Time Audio-Video settings in Horizon Client
-    * You can now select your preferred webcam and microphone in the Horizon Client Settings dialog box.
-* Physical client information is sent to remote desktops in a double-hop scenario 
-    * If Horizon Client is running inside of a remote desktop session, it sends some physical client information (instead of virtual machine information) to the remote desktop. For information about the physical client information that Horizon Client sends to the second-hop desktop, see "Client System Information Sent to Remote Desktops" in Setting Up Desktop and Application Pools in View.
-* Username hint field support for smart card authentication 
-    * Smart card users that use a single smart card certificate to authenticate to multiple user accounts can enter their user name in the Username hint field in the Horizon Client login dialog box during smart card sign-in. To make the Username hint field appear on the Horizon Client login dialog box, an administrator must enable the smart card user name hints feature for the Connection Server instance. This feature also requires Horizon 7 version 7.0.2.
-* Pass command-line arguments when launching a remote application from a URI 
-    * You can use the args query to pass command-line arguments when you launch a remote application from a URI.
-* Spanish language support
-    * Both the Horizon Client for Windows user interface and the documentation are now available in Spanish.
+    <releaseNotes>* Select specific monitors in a multiple-monitor setup
+    * You can use the selective multiple-monitor feature to select the monitors on which to display a remote desktop window. This feature is not supported for remote applications. For details, see "Select Specific Monitors in a Multiple-Monitor Setup" in [Using VMware Horizon Client for Windows](https://www.vmware.com/pdf/horizon-view/horizon-client-windows-43-document.pdf).
+* Disable and hide the client drive redirection feature
+    * You can use the Disable sharing files and folders group policy setting to specify whether client drive redirection functionality is available in Horizon Client. When this setting is enabled, all client drive redirection functionality is disabled in Horizon Client, including the ability to open local files with remote applications, and client drive redirection elements are hidden in the Horizon Client user interface.
+* Single installer for 32-bit and 64-bit systems 
+    * A single installer is provided for 32-bit and 64-bit systems. The installer automatically detects your system type and installs the correct version of Horizon Client for Windows.
+* Configure application resumption behavior
+    * You can use the Disconnected application session resumption behavior group policy setting or the vmware-view -appSessionReconnectionBehavior command-line option to configure how running applications behave when you reconnect to the server. The group policy setting takes precedence over the command-line option.
+* H.264 encoder multiple-monitor enhancement
+    * You can now use H.264 decoding with multiple monitors. For details, see "Configure VMware Blast Options" in [Using VMware Horizon Client for Windows](https://www.vmware.com/pdf/horizon-view/horizon-client-windows-43-document.pdf).
+* Nested mode enhancements
+    * You can use Windows Server 2008 R2 when running Horizon Client in nested mode. In addition, the URL content redirection and clipboard redirection features are supported in nested mode. For a complete list of the operating systems and features that are supported in nested mode, see "Features Supported in Nested Mode" in [Using VMware Horizon Client for Windows](https://www.vmware.com/pdf/horizon-view/horizon-client-windows-43-document.pdf).
+* Real-Time Audio-Video (RTAV) support for session-based desktops on Windows Server 2016
+    * Real-Time Audio-Video is supported for session-based desktops on Windows Server 2016 RDS hosts. This feature requires Horizon Agent 7.0.3 or later.
+* Windows 10 Long-Term Servicing Branch (LTSB) version 1607 support
+    * You can install Horizon Client for Windows on a Windows 10 LTSB version 1607 system.
+* OpenSSL 1.0.2j support
+    * The OpenSSL library is updated to version openssl-1.0.2j.
 
-[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-42-release-notes.html)</releaseNotes>
+[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-43-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
   </metadata>
