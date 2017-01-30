@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.31</version>
+    <version>3.33</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
@@ -18,12 +18,19 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Added: When exporting a list of equal files (see Export tab of the Options window) or a CSC-file (see the Export CSC-file window), numbers can now be separated into digit groups.
-* Modified: File sizes in the log file are now separated into digit groups.
-* Modified: When searching for duplicates, the progress bars in the scan progress window now advance more linear on average data.
-* Fixed: The context help now works for the drop-down boxes in the Main window.
-* Fixed: When exporting a list of equal files with aligned columns (see Export tab of the Options window), trailing spaces are no longer generated.
-* Fixed: Copying Cyrillic characters to the clipboard no longer fails.
+    <releaseNotes>* Added: When moving files to a relative path, the path can now be resolved relative to the respective file (see Deletion page of the Options window).
+* Added: A checksum is now only stored in the database if the corresponding file is larger than a configurable value (see Database page of the Options window).
+* Modified: The encoding "OEM" is now the default setting for batch files.
+* Fixed: Eliminated a bug where an installed version was detected as portable version.
+* Fixed: Added an explanation for the formerly unknown error code 17.
+
+Changes from 3.32
+
+* Added: The new Extensions page in the Options window allows to specify file extensions that are different but should be considered as equal. This option is enabled by default.
+* Modified: The scan progress window can now be closed via the close button in its title bar after a scan is finished.
+* Fixed: Corrected an overflow of the "Scanning for duplicates" progress bar in the scan progress window (regression since v3.31).
+* Fixed: If a folder is added to a pool which contains many sub-folders of that folder, then the warning message no longer overflows.
+* Fixed: The uninstaller now works properly for 32-bit Windows.
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
 	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
