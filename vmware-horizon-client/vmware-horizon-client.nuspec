@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.3.0</version>
+    <version>4.4.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -16,26 +16,24 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
-    <releaseNotes>* Select specific monitors in a multiple-monitor setup
-    * You can use the selective multiple-monitor feature to select the monitors on which to display a remote desktop window. This feature is not supported for remote applications. For details, see "Select Specific Monitors in a Multiple-Monitor Setup" in [Using VMware Horizon Client for Windows](https://www.vmware.com/pdf/horizon-view/horizon-client-windows-43-document.pdf).
-* Disable and hide the client drive redirection feature
-    * You can use the Disable sharing files and folders group policy setting to specify whether client drive redirection functionality is available in Horizon Client. When this setting is enabled, all client drive redirection functionality is disabled in Horizon Client, including the ability to open local files with remote applications, and client drive redirection elements are hidden in the Horizon Client user interface.
-* Single installer for 32-bit and 64-bit systems 
-    * A single installer is provided for 32-bit and 64-bit systems. The installer automatically detects your system type and installs the correct version of Horizon Client for Windows.
-* Configure application resumption behavior
-    * You can use the Disconnected application session resumption behavior group policy setting or the vmware-view -appSessionReconnectionBehavior command-line option to configure how running applications behave when you reconnect to the server. The group policy setting takes precedence over the command-line option.
-* H.264 encoder multiple-monitor enhancement
-    * You can now use H.264 decoding with multiple monitors. For details, see "Configure VMware Blast Options" in [Using VMware Horizon Client for Windows](https://www.vmware.com/pdf/horizon-view/horizon-client-windows-43-document.pdf).
-* Nested mode enhancements
-    * You can use Windows Server 2008 R2 when running Horizon Client in nested mode. In addition, the URL content redirection and clipboard redirection features are supported in nested mode. For a complete list of the operating systems and features that are supported in nested mode, see "Features Supported in Nested Mode" in [Using VMware Horizon Client for Windows](https://www.vmware.com/pdf/horizon-view/horizon-client-windows-43-document.pdf).
-* Real-Time Audio-Video (RTAV) support for session-based desktops on Windows Server 2016
-    * Real-Time Audio-Video is supported for session-based desktops on Windows Server 2016 RDS hosts. This feature requires Horizon Agent 7.0.3 or later.
-* Windows 10 Long-Term Servicing Branch (LTSB) version 1607 support
-    * You can install Horizon Client for Windows on a Windows 10 LTSB version 1607 system.
-* OpenSSL 1.0.2j support
-    * The OpenSSL library is updated to version openssl-1.0.2j.
+    <releaseNotes>* Support for Blast Extreme Adaptive Transport (BEAT)
+    * With the VMware Blast display protocol, Horizon Client for Windows uses TCP networking when it connects to a server or BEAT if the agent and Blast Secure Gateway (if enabled) support BEAT connectivity. You can select network condition options to use only TCP networking or BEAT networking.
+* Hide security information for enhanced security
+    * A Horizon 7 version 7.1 administrator can configure global settings to hide security information in Horizon Client for Windows, including server URL information and the **Domain** drop-down menu. To authenticate when the **Domain** drop-down menu is hidden in Horizon Client, you must provide domain information by entering your user name in the format domain\username or username@domain in the **User name** text box.
+* Restart a remote desktop
+    * You can restart a remote desktop from Horizon Client for Windows. Restarting a remote desktop is the equivalent of the Windows operating system restart command.
+* Proxy fail over with PAC file in Internet Explorer
+    * Horizon Client supports proxy fail over with the **Use automatic configuration script** setting under **Automatic configuration** in **Internet Options > Connections > LAN settings** in Internet Explorer. To use this setting, you must create an automatic configuration script (PAC file) that returns multiple proxy servers.
+* Resolution helper tooltip shows remote desktop resolution
+    * If you drag a corner of the remote desktop window to resize it, a tooltip displays the screen resolution in the lower-right corner of the window
+* Unauthenticated access to remote applications
+    * A Horizon 7 version 7.1 administrator can create Unauthenticated Access users and entitle those users to remote applications. Unauthenticated Access users can log in to the server anonymously from Horizon Client for Windows and connect to their remote applications. For information about creating Unauthenticated Access users, see the View Administration document.
+* Support for Microsoft Aero Peek
+    * Horizon Client for Windows supports the Microsoft Aero Peek feature.
+* OpenSSL 1.0.2k support
+    * The OpenSSL library is updated to version openssl-1.0.2k.
 
-[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-43-release-notes.html)</releaseNotes>
+[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-44-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
   </metadata>
