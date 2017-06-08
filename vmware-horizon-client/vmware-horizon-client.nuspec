@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.4.0</version>
+    <version>4.5.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -16,24 +16,24 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
-    <releaseNotes>* Support for Blast Extreme Adaptive Transport (BEAT)
-    * With the VMware Blast display protocol, Horizon Client for Windows uses TCP networking when it connects to a server or BEAT if the agent and Blast Secure Gateway (if enabled) support BEAT connectivity. You can select network condition options to use only TCP networking or BEAT networking.
-* Hide security information for enhanced security
-    * A Horizon 7 version 7.1 administrator can configure global settings to hide security information in Horizon Client for Windows, including server URL information and the **Domain** drop-down menu. To authenticate when the **Domain** drop-down menu is hidden in Horizon Client, you must provide domain information by entering your user name in the format domain\username or username@domain in the **User name** text box.
-* Restart a remote desktop
-    * You can restart a remote desktop from Horizon Client for Windows. Restarting a remote desktop is the equivalent of the Windows operating system restart command.
-* Proxy fail over with PAC file in Internet Explorer
-    * Horizon Client supports proxy fail over with the **Use automatic configuration script** setting under **Automatic configuration** in **Internet Options > Connections > LAN settings** in Internet Explorer. To use this setting, you must create an automatic configuration script (PAC file) that returns multiple proxy servers.
-* Resolution helper tooltip shows remote desktop resolution
-    * If you drag a corner of the remote desktop window to resize it, a tooltip displays the screen resolution in the lower-right corner of the window
-* Unauthenticated access to remote applications
-    * A Horizon 7 version 7.1 administrator can create Unauthenticated Access users and entitle those users to remote applications. Unauthenticated Access users can log in to the server anonymously from Horizon Client for Windows and connect to their remote applications. For information about creating Unauthenticated Access users, see the View Administration document.
-* Support for Microsoft Aero Peek
-    * Horizon Client for Windows supports the Microsoft Aero Peek feature.
-* OpenSSL 1.0.2k support
-    * The OpenSSL library is updated to version openssl-1.0.2k.
+    <releaseNotes>* Next Generation Horizon Client for Windows installer
+    * The Horizon Client for Windows installer has been updated to provide an enhanced user experience.
+* Virtualization Pack for Skype for Business
+    * You can run Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network. All media processing takes place on the Windows client machine, instead of in the virtual desktop, during Skype audio and video calls. To use this feature, you must install the Virtualization Pack for Skype for Business on the client machine during Horizon Client installation. A Horizon administrator must also install the Virtualization Pack for Skype for Business on the virtual desktop during Horizon Agent installation.
+* 32-bit Core Remote Experience component
+    * You can use the Horizon Client for Windows installer to install the 32-bit Core Remote Experience component on a 64-bit Windows client machine.
+* Windows 10 Creators Update support
+    * You can install Horizon Client for Windows on a Windows 10 Creators Update machine.
+* Recursive Unlock feature
+    * The Recursive Unlock feature unlocks all remote sessions after the client machine has been unlocked. This feature applies only after a user logs in to the server with the Log in as current user feature. To enable this feature, you set the **Unlock remote sessions when the client machine is unlocked** group policy setting.
+* vdm_client.adm template file has been removed
+    * The vdm_client.adm template file has been removed from Horizon Client for Windows. You must use the vdm_client.admx template file instead.
+* Scrolling wheel pad support
+    * You can use a scrolling wheel pad on a laptop with the VMware Blast and PCoIP display protocols.
+* Support for Workspace ONE Mode
+    * Beginning with Horizon 7 version 7.2, a Horizon administrator can enable Workspace ONE mode for a Connection Server instance. If you connect to a Workspace ONE mode enabled server in Horizon Client for Windows, you are redirected to the Workspace ONE portal to launch your entitled desktops and applications.
 
-[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/horizon-client-windows-44-release-notes.html)</releaseNotes>
+[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/45/horizon-client-windows-45-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
   </metadata>
