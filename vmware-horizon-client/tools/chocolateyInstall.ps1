@@ -8,7 +8,7 @@ $packageArgs = @{
   fileType      = 'exe'
   url           = 'https://download3.vmware.com/software/view/viewclients/CART17Q2/VMware-Horizon-Client-4.5.0-5650915.exe'
 
-  silentArgs    = '/S /V"/qn REBOOT=Reallysuppress"'
+  silentArgs    = '/silent /norestart'
   validExitCodes= @(0, 3010, 1641)
 
   softwareName  = 'vmware-horizon-client*'
