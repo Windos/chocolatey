@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.5.0</version>
+    <version>4.6.1</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -16,26 +16,36 @@
     <licenseUrl>http://www.vmware.com/download/eula/universal_eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
-    <releaseNotes>* Next Generation Horizon Client for Windows installer
-    * The Horizon Client for Windows installer has been updated to provide an enhanced user experience.
-* Virtualization Pack for Skype for Business
-    * You can run Skype for Business inside a virtual desktop without negatively affecting the virtual infrastructure and overloading the network. All media processing takes place on the Windows client machine, instead of in the virtual desktop, during Skype audio and video calls. To use this feature, you must install the Virtualization Pack for Skype for Business on the client machine during Horizon Client installation. A Horizon administrator must also install the Virtualization Pack for Skype for Business on the virtual desktop during Horizon Agent installation.
-* 32-bit Core Remote Experience component
-    * You can use the Horizon Client for Windows installer to install the 32-bit Core Remote Experience component on a 64-bit Windows client machine.
-* Windows 10 Creators Update support
-    * You can install Horizon Client for Windows on a Windows 10 Creators Update machine.
-* Recursive Unlock feature
-    * The Recursive Unlock feature unlocks all remote sessions after the client machine has been unlocked. This feature applies only after a user logs in to the server with the Log in as current user feature. To enable this feature, you set the **Unlock remote sessions when the client machine is unlocked** group policy setting.
-* vdm_client.adm template file has been removed
-    * The vdm_client.adm template file has been removed from Horizon Client for Windows. You must use the vdm_client.admx template file instead.
-* Scrolling wheel pad support
-    * You can use a scrolling wheel pad on a laptop with the VMware Blast and PCoIP display protocols.
-* Support for Workspace ONE Mode
-    * Beginning with Horizon 7 version 7.2, a Horizon administrator can enable Workspace ONE mode for a Connection Server instance. If you connect to a Workspace ONE mode enabled server in Horizon Client for Windows, you are redirected to the Workspace ONE portal to launch your entitled desktops and applications.
+    <releaseNotes>The **4.6.1** release of Horizon Client for Windows includes a new command-line installation property called AUTO_UPDATE_ENABLED. This property determines whether the online update feature is enabled in Horizon Client for Windows. A value of 1 enables the feature. A value of 0 disables the feature.
 
-[Full release notes](https://pubs.vmware.com/Release_Notes/en/horizon-client/45/horizon-client-windows-45-release-notes.html)</releaseNotes>
+The **4.6** release of Horizon Client for Windows contains the following new features:
+
+* Support for pre-launched applications
+  * A Horizon 7 administrator can configure a published application so that an application session is launched before you open the published application in Horizon Client. When a published application is pre-launched, the application opens more quickly in Horizon Client. This feature requires Horizon 7 version 7.2 or later on the server.
+* Support for server-created Start menu shortcuts for remote desktops and published applications
+  * A Horizon 7 administrator can configure Start menu shortcuts for remote desktops and published applications. If you are entitled to remote desktops or published applications that have shortcuts, Horizon Client places the shortcuts in the Start menu on your local system when you connect to the server. This feature requires Horizon 7 version 7.3.1 or later on the server.
+* HTML5 multimedia redirection with Chrome
+  * A Horizon 7 administrator can configure the HTML5 Multimedia Redirection feature to redirect HTML5 multimedia content from a remote desktop to your local system when you use the Chrome browser. Because your local system plays the HTML5 multimedia content, you have a better audio and video experience. The HTML5 Multimedia Redirection feature is enabled by default in Horizon Client during installation. A Horizon 7 administrator must enable HTML5 Multimedia Redirection in the remote desktop during Horizon Agent installation. Horizon Agent 7.3.1 is required.
+* New command-line properties for the Horizon Client for Windows installer
+  * The following command-line properties have been added to the Horizon Client for Windows installer:
+  * INSTALL_HTML5MMR - specifies whether to install HTML5 Multimedia Redirection support.
+  * REMOVE - specifies the features not to install.
+  * STARTMENU_SHORTCUT - specifies whether to create a Start menu shortcut for Horizon Client on your local system.
+* Support for UNC paths with client drive redirection
+  * You can now use the client drive redirection feature to redirect mapped drives that have UNC (Universal Naming Convention) paths.
+* USB redirection support in nested mode
+  * The USB redirection feature is now supported when you use Horizon Client in nested mode.
+* SHA-256 support
+  * Horizon Client has been updated to support the SHA-256 cryptographic hash algorithm.
+* OpenSSL 1.0.2l support
+  * The OpenSSL library is updated to version openssl-1.0.2l.
+
+[Full release notes](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/4.6.1/rn/horizon-client-windows-461-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
+	<dependencies>
+      <dependency id="dotnet3.5" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
