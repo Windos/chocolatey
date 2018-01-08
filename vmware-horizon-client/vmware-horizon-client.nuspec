@@ -4,7 +4,7 @@
   <metadata>
     <id>vmware-horizon-client</id>
     <title>VMware Horizon Client</title>
-    <version>4.6.1</version>
+    <version>4.7.0</version>
     <authors>VMware Inc.</authors>
     <owners>Windos</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
@@ -18,34 +18,28 @@
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
     <releaseNotes>The **4.6.1** release of Horizon Client for Windows includes a new command-line installation property called AUTO_UPDATE_ENABLED. This property determines whether the online update feature is enabled in Horizon Client for Windows. A value of 1 enables the feature. A value of 0 disables the feature.
 
-The **4.6** release of Horizon Client for Windows contains the following new features:
+The **4.7** release of Horizon Client for Windows contains the following new features:
 
-* Support for pre-launched applications
-  * A Horizon 7 administrator can configure a published application so that an application session is launched before you open the published application in Horizon Client. When a published application is pre-launched, the application opens more quickly in Horizon Client. This feature requires Horizon 7 version 7.2 or later on the server.
-* Support for server-created Start menu shortcuts for remote desktops and published applications
-  * A Horizon 7 administrator can configure Start menu shortcuts for remote desktops and published applications. If you are entitled to remote desktops or published applications that have shortcuts, Horizon Client places the shortcuts in the Start menu on your local system when you connect to the server. This feature requires Horizon 7 version 7.3.1 or later on the server.
-* HTML5 multimedia redirection with Chrome
-  * A Horizon 7 administrator can configure the HTML5 Multimedia Redirection feature to redirect HTML5 multimedia content from a remote desktop to your local system when you use the Chrome browser. Because your local system plays the HTML5 multimedia content, you have a better audio and video experience. The HTML5 Multimedia Redirection feature is enabled by default in Horizon Client during installation. A Horizon 7 administrator must enable HTML5 Multimedia Redirection in the remote desktop during Horizon Agent installation. Horizon Agent 7.3.1 is required.
-* New command-line properties for the Horizon Client for Windows installer
-  * The following command-line properties have been added to the Horizon Client for Windows installer:
-  * INSTALL_HTML5MMR - specifies whether to install HTML5 Multimedia Redirection support.
-  * REMOVE - specifies the features not to install.
-  * STARTMENU_SHORTCUT - specifies whether to create a Start menu shortcut for Horizon Client on your local system.
-* Support for UNC paths with client drive redirection
-  * You can now use the client drive redirection feature to redirect mapped drives that have UNC (Universal Naming Convention) paths.
-* USB redirection support in nested mode
-  * The USB redirection feature is now supported when you use Horizon Client in nested mode.
-* SHA-256 support
-  * Horizon Client has been updated to support the SHA-256 cryptographic hash algorithm.
-* OpenSSL 1.0.2l support
-  * The OpenSSL library is updated to version openssl-1.0.2l.
+* VMware Blast network recovery improvements
+  * The VMware Blast network recovery feature has been improved to be resilient against transient network failures by providing network continuity to remote desktops and applications. Applications and desktops will seamlessly resume on network connection resumption.
+* Session Collaboration
+  * When the session collaboration feature is enabled for a remote desktop, you can invite other users to join an existing remote desktop session, or you can join a collaborative session when you receive an invitation from another user.
+* USB autoconnect features for published applications
+  * The USB autoconnect features, including URI queries, command-line options, and group policy settings, now apply to published applications as well as remote desktops.
+* Block multiple instances with group policy
+  * You can use the "Block multiple Horizon Client instances per Windows session" group policy setting in the Horizon Client Configuration ADMX template file to prevent users from launching multiple Horizon Client instances during a Windows session.
+* Windows 10 Fall Creators Update support
+  * Horizon Client now supports Windows 10 1709 SAC (Fall Creators Update).
+* URL content redirection with the Chrome browser
+  * URL content can now be redirected in the Chrome browser. To use URL Content Redirection with the Chrome browser, you must enable the VMware Horizon URL Content Redirection Helper extension for Chrome.
+* Fingerprint scanner redirection
+  * With the device bridge feature, you can redirect biometric devices, specifically fingerprint scanners, that are plugged into a serial port on the Windows client system to virtual desktops, published desktops, and published applications.
+* High color accuracy with VMware Blast
+  * You can use the VMware Blast High Color Accuracy option to allow increased color fidelity when using H.264 decoding.
 
-[Full release notes](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/4.6.1/rn/horizon-client-windows-461-release-notes.html)</releaseNotes>
+[Full release notes](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/4.7/rn/horizon-client-windows-47-release-notes.html)</releaseNotes>
 	<docsUrl>https://www.vmware.com/support/viewclients/doc/viewclients_pubs.html</docsUrl>
 	<mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
-	<dependencies>
-      <dependency id="dotnet3.5" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
