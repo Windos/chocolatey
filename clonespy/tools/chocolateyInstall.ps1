@@ -5,13 +5,13 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = 'clonespy'
   fileType      = 'exe'
-  url           = 'http://www.clonespy.com/english/download/cspy333.exe'
+  url           = 'http://www.clonespy.com/english/download/cspy341.exe'
 
   silentArgs    = '/S /NODESKTOPSHORTCUT /X64'
   validExitCodes= @(0)
 
   softwareName  = 'clonespy*'
-  checksum      = 'BC452F8C0FE01C289C98BB4633B87C4E'
+  checksum      = 'C16250E3DF3D273CD8562CEA316A8851'
   checksumType  = 'md5'
 }
 

@@ -4,10 +4,10 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.33</version>
+    <version>3.41</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
-    <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8</summary>
+    <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8/8.1/10</summary>
     <description>CloneSpy can help you free up hard drive space by detecting and removing duplicate files. Duplicate files have exactly the same contents regardless of their name, date, time and location. Also, CloneSpy is able to find files that are not exactly identical, but have the same file name. Perhaps you have different versions of a file and you want to find all of them and remove the older versions. CloneSpy can also find zero length files. These are files that have no content.
 	
 	CloneSpy is available in both 32-bit and 64-bit versions. The appropriate version for your system will be installed automatically.</description>
@@ -18,19 +18,32 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>* Added: When moving files to a relative path, the path can now be resolved relative to the respective file (see Deletion page of the Options window).
-* Added: A checksum is now only stored in the database if the corresponding file is larger than a configurable value (see Database page of the Options window).
-* Modified: The encoding "OEM" is now the default setting for batch files.
-* Fixed: Eliminated a bug where an installed version was detected as portable version.
-* Fixed: Added an explanation for the formerly unknown error code 17.
+    <releaseNotes>Changes in 3.41
+	
+* Added: Files and folders that are ignored during scanning can now be logged (see Logging page of the Options window).
+* Added: A new option remembers size and position of the Add folder window (see Priority page of the Options window).
+* Added: The new command line option -s allows for silent scans (see the help file for details).
+* Added: A message box now explains the Delete all (!) option on the Time + Size page of the Options window when that option is selected.
+* Modified: Removed the entry Programme from the default folder ignore list (see Folders page of the Options window).
+* Fixed: Hitting the space bar while a scan is ongoing no longer closes the scan progress window.
+* Fixed: The context help now works for the edit box in the Insert mask window.
+* Fixed: Corrected typo (spacing) in the Mode drop-down box of the Main window.
 
-Changes from 3.32
+Changes from 3.40
 
-* Added: The new Extensions page in the Options window allows to specify file extensions that are different but should be considered as equal. This option is enabled by default.
-* Modified: The scan progress window can now be closed via the close button in its title bar after a scan is finished.
-* Fixed: Corrected an overflow of the "Scanning for duplicates" progress bar in the scan progress window (regression since v3.31).
-* Fixed: If a folder is added to a pool which contains many sub-folders of that folder, then the warning message no longer overflows.
-* Fixed: The uninstaller now works properly for 32-bit Windows.
+* Modified: Reimplemented the pools and consolidated related feedback messages to resolve several visualization issues.
+* Modified: For all Windows versions prior to Windows 10, DPI scaling is now performed by the system to solve icon scaling issues. For Windows 10, you need to adapt the program's DPI scaling behavior if icons are displayed too small (see our FAQ).
+* Fixed: Added an explanation for the formerly unknown error code 53.
+
+Changes from 3.34
+
+* Added: The update checker can now download and install the latest version (see the Menu bar of the Main window).
+* Added: A new option remembers size and position of the Main window (see Priority page of the Options window).
+* Added: A new option remembers size and position of the Result presentation windows (see Priority page of the Options window).
+* Added: File properties can now be viewed via the context menu of the Result presentation windows.
+* Added: The View CSC-file window now has a search function.
+* Fixed: When scanning against CSC-files, the Single duplicates window now shows all equal files found (regression since v3.2).
+* Fixed: The pattern matcher now recognizes matching string even if the pattern ends with an asterisk.
 
 [Full update history](http://www.clonespy.com/?History)</releaseNotes>
 	<docsUrl>http://www.clonespy.com/?Features</docsUrl>
