@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.41</version>
+    <version>3.42</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8/8.1/10</summary>
@@ -18,8 +18,16 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>Changes in 3.41
-	
+    <releaseNotes>Changes in 3.42
+
+* Added: Folders can now be scanned non-recursively, i.e., sub-folders can be ignored (see Pool frames of the Main window).
+* Added: When moving files to a relative path, the path can now be resolved relative to a retained file (see Deletion page of the Options window).
+* Added: Files with paths that are too long for CloneSpy to process can now be generally ignored (see Files page of the Options window).
+* Modified: The installer no longer requires administrator privileges for unpacking the portable version.
+* Fixed: Added an explanation for the formerly unknown error code 1392.
+
+Changes from 3.41
+
 * Added: Files and folders that are ignored during scanning can now be logged (see Logging page of the Options window).
 * Added: A new option remembers size and position of the Add folder window (see Priority page of the Options window).
 * Added: The new command line option -s allows for silent scans (see the help file for details).
