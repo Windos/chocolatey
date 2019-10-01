@@ -4,14 +4,14 @@
   <metadata>
     <id>cinebench</id>
     <title>MAXON Cinebench</title>
-    <version>20.0</version>
+    <version>20.0.0.1</version>
     <authors>MAXON Computer</authors>
     <owners>Windos</owners>
     <summary>Cinebench is a real-world cross platform test suite that evaluates your computer's performance capabilities.</summary>
     <description>Cinebench is a real-world cross-platform test suite that evaluates your computer's hardware capabilities. Improvements to Cinebench Release 20 reflect the overall advancements to CPU and rendering technology in recent years, providing a more accurate measurement of Cinema 4D's ability to take advantage of multiple CPU cores and modern processor features available to the average user. Best of all: It's free.
 
 Cinebench is the perfect tool to compare CPU and graphics performance across various systems and platforms.
-	
+
 Only compatible with 64-bit Operating Systems.</description>
     <projectUrl>http://www.maxon.net/products/cinebench</projectUrl>
     <tags>cinebench maxon benchmark</tags>
