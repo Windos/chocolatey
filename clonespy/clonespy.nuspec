@@ -4,7 +4,7 @@
   <metadata>
     <id>clonespy</id>
     <title>CloneSpy</title>
-    <version>3.42</version>
+    <version>3.43</version>
     <authors>CloneSpy</authors>
     <owners>Windos</owners>
     <summary>CloneSpy is a Free Duplicate File CleanUp Tool for Windows© XP/Vista/7/8/8.1/10</summary>
@@ -18,7 +18,18 @@
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/clonespy/clonespy-ico.png</iconUrl>
-    <releaseNotes>Changes in 3.42
+    <releaseNotes>Changes in 3.43
+
+* Added: You can now exclude sub-folders when marking or unmarking files in a folder via the context menu of the list box in the All duplicates window.
+* Added: Remembered window sizes and positions can now be reset to their default values (see Misc page of the Options window).
+* Modified: Hard links and shortcuts are now created before the file to be replaced is deleted (see Deletion page of the Options window).
+* Modified: Leftover files are now deleted at the end of a scan to prevent deletion conflicts (see Deletion page of the Options window).
+* Modified: Deleted leftover files are now counted in the scan progress window and listed in the log file if deleted files have to be logged (see  Logging page of the Options window).
+* Modified: The title of the Main window now contains the program version.
+* Modified: Renamed the Priority page of the Options window to Misc.
+* Modified: Renamed Execute file to Open file in the context menu of the Single duplicates window and All duplicates window.
+
+Changes from 3.42
 
 * Added: Folders can now be scanned non-recursively, i.e., sub-folders can be ignored (see Pool frames of the Main window).
 * Added: When moving files to a relative path, the path can now be resolved relative to a retained file (see Deletion page of the Options window).
