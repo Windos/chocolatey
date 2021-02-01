@@ -4,11 +4,11 @@
   <metadata>
     <id>cinebench</id>
     <title>MAXON Cinebench</title>
-    <version>20.0.0.1</version>
+    <version>23.200</version>
     <authors>MAXON Computer</authors>
     <owners>Windos</owners>
     <summary>Cinebench is a real-world cross platform test suite that evaluates your computer's performance capabilities.</summary>
-    <description>Cinebench is a real-world cross-platform test suite that evaluates your computer's hardware capabilities. Improvements to Cinebench Release 20 reflect the overall advancements to CPU and rendering technology in recent years, providing a more accurate measurement of Cinema 4D's ability to take advantage of multiple CPU cores and modern processor features available to the average user. Best of all: It's free.
+    <description>Cinebench is a real-world cross-platform test suite that evaluates your computer's hardware capabilities. Improvements to Cinebench Release 23 reflect the overall advancements to CPU and rendering technology in recent years, providing a more accurate measurement of Cinema 4D's ability to take advantage of multiple CPU cores and modern processor features available to the average user. Best of all: It's free.
 
 Cinebench is the perfect tool to compare CPU and graphics performance across various systems and platforms.
 
@@ -19,11 +19,11 @@ Only compatible with 64-bit Operating Systems.</description>
     <licenseUrl>https://www.maxon.net/fileadmin/MAXON_Content/100_Administrative/30_Legal/EULA_R20/MAXON_R20_EULA_EN.PDF</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/Windos/chocolatey/master/cinebench/cinebech.png</iconUrl>
-    <releaseNotes>* Cinebench R20 uses a much larger and more complex test scene than R15 requiring about 8x the computational power needed to render it. The test also requires about 4x the memory.
-* Cinebench R20 and Cinema 4D R20 incorporate the latest rendering architectures, including integration of Intel’s Embree raytracing technology and advanced features on modern CPUs from AMD and Intel that allow users to render the same scene on the same hardware twice as fast as previously.
-* Cinebench R20 provides improved benchmark accuracy for current and next generation CPUs to test if a machine runs stable on a high CPU load, if the cooling solution of a desktop or notebook is sufficient for longer running tasks to deliver the full potential of the CPU, and if a machine is able to handle demanding real-life 3D tasks.
+    <releaseNotes>* Cinebench R23 now supports Apple’s M1-powered computing systems.
+* Cinebench is now based on the latest Release 23 code using updated compilers, and has a minimum runtime activated by default (previously hidden in preferences).
+* Cinebench R23 provides improved benchmark accuracy for current and next generation CPUs to test if a machine runs stable on a high CPU load, if the cooling solution of a desktop or notebook is sufficient for longer running tasks to deliver the full potential of the CPU, and if a machine is able to handle demanding real-life 3D tasks.
 
-https://www.maxon.net/en/news/press-releases/article/maxon-announces-next-generation-cinebench-release-20/</releaseNotes>
+https://www.maxon.net/en/article/maxon-announces-cinema-4d-r23</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

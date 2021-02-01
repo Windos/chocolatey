@@ -1,6 +1,6 @@
 ﻿$packageName = 'cinebench'
-$url = 'http://http.maxon.net/pub/cinebench/CinebenchR20.zip'
-$md5Hash = 'F6FA0F554CEBC22F10D91F1D148710DE'
+$url = 'http://http.maxon.net/pub/cinebench/CinebenchR23.zip'
+$md5Hash = 'ab936936b97c7b54a05fda185f846bf8'
 
 $installDir = $env:chocolateyPackageFolder
 
