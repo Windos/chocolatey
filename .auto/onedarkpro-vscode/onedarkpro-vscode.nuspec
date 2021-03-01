@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>onedarkpro-vscode</id>
+    <version>3.9.13</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/.auto/onedarkpro-vscode</packageSourceUrl>
+    <owners>Josh King</owners>
+    <title>One Dark Pro VSCode Extension</title>
+    <authors>Binaryify</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/windos/chocolatey@ac56ed72e517fbe1c0efef80d63c8a6d2463159b/.icons/onedarkpro-vscode.png</iconUrl>
+    <copyright>Copyright (c) 2013-2020 Binaryify</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme/license</licenseUrl>
+    <projectSourceUrl>https://github.com/Binaryify/OneDark-Pro</projectSourceUrl>
+    <docsUrl>https://binaryify.github.io/OneDark-Pro</docsUrl>
+    <bugTrackerUrl>https://github.com/Binaryify/OneDark-Pro/issues</bugTrackerUrl>
+    <tags>onedarkpro-vscode vscode extension theme onedark</tags>
+    <summary>Atom's iconic One Dark theme</summary>
+    <description><![CDATA[Atom's iconic One Dark theme, and one of the most installed themes for VS Code!
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
+      <dependency id="vscode" version="1.40.0" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
