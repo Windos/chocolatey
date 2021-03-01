@@ -9,7 +9,7 @@
     <title>One Dark Pro VSCode Extension</title>
     <authors>Binaryify</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/windos/chocolatey@ac56ed72e517fbe1c0efef80d63c8a6d2463159b/_icons/onedarkpro-vscode.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/windos/chocolatey@e79be577bac3e3cda4802bde521bb0b26ff57fe1/_icons/onedarkpro-vscode.png</iconUrl>
     <copyright>Copyright (c) 2013-2020 Binaryify</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme/license</licenseUrl>
     <projectSourceUrl>https://github.com/Binaryify/OneDark-Pro</projectSourceUrl>
