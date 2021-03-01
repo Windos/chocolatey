@@ -21,7 +21,7 @@ jobs:
       - name: Run onedarkpro-vscode update script
         id: update
         run: |
-          cd onedarkpro-vscode
+          cd _auto\onedarkpro-vscode
           $UpdateOutput = .\update.ps1
           $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
           Write-Host "::set-output name=NupkgPath::$NupkgPath"
