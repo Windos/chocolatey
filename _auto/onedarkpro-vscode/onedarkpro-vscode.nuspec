@@ -4,7 +4,7 @@
   <metadata>
     <id>onedarkpro-vscode</id>
     <version>3.9.15</version>
-    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/.auto/onedarkpro-vscode</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/onedarkpro-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>One Dark Pro VSCode Extension</title>
     <authors>Binaryify</authors>
