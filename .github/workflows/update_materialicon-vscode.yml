@@ -1,0 +1,52 @@
+name: Auto Update - Material Icon Theme VSCode Extension
+
+on:
+  schedule:
+    - cron:  '15 0 * * *'
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: pwsh
+
+jobs:
+  update_materialicon-vscode:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Chocolatey Automatic Package Updater Module
+        run: Install-Module -Name AU -Force
+
+      - name: Run materialicon-vscode update script
+        id: update
+        run: |
+          cd _auto\materialicon-vscode
+          $UpdateOutput = .\update.ps1
+          $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
+          Write-Host "::set-output name=NupkgPath::$NupkgPath"
+          $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
+          Write-Host "::set-output name=UpdateStatus::$UpdateStatus"
+
+      - name: Cancel due to no Update
+        uses: andymckay/cancel-action@0.2
+        if: steps.update.outputs.UpdateStatus == 'No Update'
+
+      - name: Test materialicon-vscode install
+        run: Test-Package -Install -Nu ${{ steps.update.outputs.NupkgPath }}
+        if: steps.update.outputs.UpdateStatus == 'Update Available'
+
+      - name: Publish to Chocolatey community feed
+        run: |
+          $Nupkg = '${{ steps.update.outputs.NupkgPath }}'
+          $ApiKey = '${{ secrets.CHOCO_KEY }}'
+          $ChocoServer = 'https://push.chocolatey.org/'
+          choco push $Nupkg --source $ChocoServer --key $ApiKey
+        if: steps.update.outputs.UpdateStatus == 'Update Available'
+
+      - name: Commit Updated nuspec
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply Choco package update - Material Icon Theme VSCode Extension ${{ steps.update.outputs.materialiconversion }}
+          file_pattern: '*.nuspec *.ps1'
+        if: steps.update.outputs.UpdateStatus == 'Update Available'

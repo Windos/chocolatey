@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>materialicon-vscode</id>
+    <version>4.4.0</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/materialicon-vscode</packageSourceUrl>
+    <owners>Josh King</owners>
+    <title>Material Icon Theme VSCode Extension</title>
+    <authors>Philipp Kief</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/2b7fcb8e99ff970ce49dcd4a8fc2076c5d382b1a/_icons/materialicon-vscode.png</iconUrl>
+    <copyright>The MIT License (MIT) Copyright (c) 2021 Philipp Kief</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/PKief.material-icon-theme/license</licenseUrl>
+    <projectSourceUrl>https://github.com/PKief/vscode-material-icon-theme</projectSourceUrl>
+    <docsUrl>https://github.com/PKief/vscode-material-icon-theme/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/PKief/vscode-material-icon-theme/issues</bugTrackerUrl>
+    <tags>materialicon-vscode vscode extension theme materialicon</tags>
+    <summary>Material Design Icons for Visual Studio Code</summary>
+    <description></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/PKief.material-icon-theme/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
+      <dependency id="vscode" version="1.40.0" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
