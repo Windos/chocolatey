@@ -36,13 +36,13 @@ jobs:
         run: Test-Package -Install -Nu ${{ steps.update.outputs.NupkgPath }}
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
-      - name: Publish to Chocolatey community feed
-        run: |
-          $Nupkg = '${{ steps.update.outputs.NupkgPath }}'
-          $ApiKey = '${{ secrets.CHOCO_KEY }}'
-          $ChocoServer = 'https://push.chocolatey.org/'
-          choco push $Nupkg --source $ChocoServer --key $ApiKey
-        if: steps.update.outputs.UpdateStatus == 'Update Available'
+#      - name: Publish to Chocolatey community feed
+#        run: |
+#          $Nupkg = '${{ steps.update.outputs.NupkgPath }}'
+#          $ApiKey = '${{ secrets.CHOCO_KEY }}'
+#          $ChocoServer = 'https://push.chocolatey.org/'
+#          choco push $Nupkg --source $ChocoServer --key $ApiKey
+#        if: steps.update.outputs.UpdateStatus == 'Update Available'
 
       - name: Commit Updated nuspec
         uses: stefanzweifel/git-auto-commit-action@v4
