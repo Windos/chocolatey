@@ -48,5 +48,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply Choco package update - One Dark Pro VSCode Extension ${{ steps.update.outputs.onedarkproversion }}
-          file_pattern: *.nuspec *.ps1
+          file_pattern: '*.nuspec *.ps1'
         if: steps.update.outputs.UpdateStatus == 'Update Available'
