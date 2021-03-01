@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>onedarkpro-vscode</id>
-    <version>3.9.13</version>
+    <version>3.9.15</version>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/.auto/onedarkpro-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>One Dark Pro VSCode Extension</title>
@@ -18,6 +18,9 @@
     <tags>onedarkpro-vscode vscode extension theme onedark</tags>
     <summary>Atom's iconic One Dark theme</summary>
     <description><![CDATA[Atom's iconic One Dark theme, and one of the most installed themes for VS Code!
+
+The purpose of this Chocolately package is to perform the initial install of the One Dark Pro theme for Visual Studio Code.
+The extension will automatically update within VS Code going forward.
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
 ]]></description>
