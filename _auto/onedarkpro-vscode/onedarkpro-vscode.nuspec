@@ -3,13 +3,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>onedarkpro-vscode</id>
-    <version>3.9.13</version>
+    <version>3.9.15</version>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/onedarkpro-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>One Dark Pro VSCode Extension</title>
     <authors>Binaryify</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/Windos/chocolatey/master/_icons/onedarkpro-vscode.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/6156a83de28c15f413069f97b356087bd1e0b3a6/_icons/onedarkpro-vscode.png</iconUrl>
     <copyright>Copyright (c) 2013-2020 Binaryify</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme/license</licenseUrl>
     <projectSourceUrl>https://github.com/Binaryify/OneDark-Pro</projectSourceUrl>
