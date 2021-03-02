@@ -31,7 +31,7 @@ jobs:
       - name: Run ${{ matrix.package }} update script
         id: update
         run: |
-          cd _auto\${{ matrix.package }}-vscode
+          cd _auto\${{ matrix.package }}
           $UpdateOutput = .\update.ps1
           $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
           Write-Host "::set-output name=NupkgPath::$NupkgPath"
