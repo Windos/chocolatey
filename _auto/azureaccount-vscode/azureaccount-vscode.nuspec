@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azureaccount-vscode</id>
-    <version>0.9.5</version>
+    <version>0.9.6</version>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/azureaccount-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>Azure Account VSCode Extension</title>
@@ -17,7 +17,13 @@
     <bugTrackerUrl>https://github.com/microsoft/vscode-azure-account/issues</bugTrackerUrl>
     <tags>azureaccount-vscode vscode extension azureaccount azure</tags>
     <summary>A common Sign-In and Subscription management extension for VS Code.</summary>
-    <description></description>
+    <description><![CDATA[The Azure Account extension provides a single Azure sign-in and subscription filtering experience for all other Azure extensions. It makes Azure's Cloud Shell service available in VS Code's integrated terminal.
+
+The purpose of this Chocolatey package is to perform the initial install of the Azure Account extension for Visual Studio Code.
+The extension will automatically update within VS Code going forward.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
     <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.azure-account/changelog</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-vscode.extension" version="1.0.0" />
