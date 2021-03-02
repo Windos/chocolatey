@@ -38,10 +38,6 @@ jobs:
           $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
           Write-Host "::set-output name=UpdateStatus::$UpdateStatus"
 
-      - name: Cancel due to no Update
-        uses: andymckay/cancel-action@0.2
-        if: steps.update.outputs.UpdateStatus == 'No Update'
-
       - name: Test ${{ matrix.package }} install
         run: Test-Package -Install -Nu ${{ steps.update.outputs.NupkgPath }}
         if: steps.update.outputs.UpdateStatus == 'Update Available'
