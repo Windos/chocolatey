@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>azurefunctions-vscode</id>
+    <version>1.2.0</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/azurefunctions-vscode</packageSourceUrl>
+    <owners>Josh King</owners>
+    <title>Azure Functions VSCode Extension</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/511358ee44e0242b0ad3ec6495382b89232dfb11/_icons/azurefunctions-vscode.png</iconUrl>
+    <copyright>Copyright (c) Microsoft Corporation. All rights reserved.</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-azuretools.vscode-azurefunctions/license</licenseUrl>
+    <projectSourceUrl>https://github.com/Microsoft/vscode-azurefunctions</projectSourceUrl>
+    <docsUrl>https://github.com/Microsoft/vscode-azurefunctions/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/microsoft/vscode-azurefunctions/issues</bugTrackerUrl>
+    <tags>azurefunctions-vscode vscode extension azurefunctions azure</tags>
+    <summary>An Azure Functions extension for Visual Studio Code.</summary>
+    <description></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/ms-azuretools.vscode-azurefunctions/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
+      <dependency id="vscode" version="1.40.0" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

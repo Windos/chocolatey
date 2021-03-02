@@ -17,9 +17,10 @@ jobs:
     strategy:
       matrix:
         package: [
+          azureaccount-vscode,
+          azurefunctions-vscode,
           materialicon-vscode,
-          onedarkpro-vscode,
-          azureaccount-vscode
+          onedarkpro-vscode
         ]
 
     steps:
