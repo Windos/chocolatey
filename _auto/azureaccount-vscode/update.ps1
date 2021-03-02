@@ -8,13 +8,13 @@ function global:au_BeforeUpdate($Package) {}
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(PKief.material-icon-theme@)[^']*" = "`${1}$($Latest.RemoteVersion)"
+            "(ms-vscode.azure-account@)[^']*" = "`${1}$($Latest.RemoteVersion)"
         }
     }
 }
 
 function global:au_GetLatest {
-    $Releases = "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"
+    $Releases = "https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account"
     $PageSource = Invoke-WebRequest -UseBasicParsing $Releases
 
     if ($PageSource.Content -match 'assetUri":"([^"]+)') {

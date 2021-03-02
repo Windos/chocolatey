@@ -25,7 +25,7 @@ function global:au_GetLatest {
 
     $VSCodeManifest = Invoke-RestMethod -UseBasicParsing "$assetUri/Microsoft.VisualStudio.Code.Manifest"
 
-    Write-Host "::set-output name=onedarkproversion::$($VSCodeManifest.version)"
+    Write-Host "::set-output name=newversion::$($VSCodeManifest.version)"
 
     @{
         Version       = $VSCodeManifest.version

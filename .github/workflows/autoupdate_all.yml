@@ -1,8 +1,8 @@
-name: Auto Update - One Dark Pro VSCode Extension
+name: Choco Auto Update
 
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron:  '30 0 * * *'
   workflow_dispatch:
 
 defaults:
@@ -10,18 +10,28 @@ defaults:
     shell: pwsh
 
 jobs:
-  update_onedarkpro-vscode:
+  update_choco_auto:
+    name: update_${{ matrix.package }}
     runs-on: windows-latest
+
+    strategy:
+      matrix:
+        package: [
+          materialicon-vscode,
+          onedarkpro-vscode,
+          azureaccount-vscode
+        ]
+
     steps:
       - uses: actions/checkout@v2
 
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
 
-      - name: Run onedarkpro-vscode update script
+      - name: Run ${{ matrix.package }} update script
         id: update
         run: |
-          cd _auto\onedarkpro-vscode
+          cd _auto\${{ matrix.package }}-vscode
           $UpdateOutput = .\update.ps1
           $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
           Write-Host "::set-output name=NupkgPath::$NupkgPath"
@@ -32,7 +42,7 @@ jobs:
         uses: andymckay/cancel-action@0.2
         if: steps.update.outputs.UpdateStatus == 'No Update'
 
-      - name: Test onedarkpro-vscode install
+      - name: Test ${{ matrix.package }} install
         run: Test-Package -Install -Nu ${{ steps.update.outputs.NupkgPath }}
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
@@ -47,6 +57,6 @@ jobs:
       - name: Commit Updated nuspec
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Apply Choco package update - One Dark Pro VSCode Extension ${{ steps.update.outputs.onedarkproversion }}
+          commit_message: Apply Choco package update - ${{ matrix.package }} ${{ steps.update.outputs.newversion }}
           file_pattern: '*.nuspec *.ps1'
         if: steps.update.outputs.UpdateStatus == 'Update Available'

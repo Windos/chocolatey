@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>azureaccount-vscode</id>
+    <version>0.9.5</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/azureaccount-vscode</packageSourceUrl>
+    <owners>Josh King</owners>
+    <title>Azure Account VSCode Extension</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/0bc52b85bd26f44eaf9f16f13d0ac09f7a6659fd/_icons/azureaccount-vscode.png</iconUrl>
+    <copyright>Copyright (c) Microsoft Corporation</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.azure-account/license</licenseUrl>
+    <projectSourceUrl>https://github.com/microsoft/vscode-azure-account</projectSourceUrl>
+    <docsUrl>https://github.com/microsoft/vscode-azure-account/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/microsoft/vscode-azure-account/issues</bugTrackerUrl>
+    <tags>azureaccount-vscode vscode extension azureaccount azure</tags>
+    <summary>A common Sign-In and Subscription management extension for VS Code.</summary>
+    <description></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/ms-vscode.azure-account/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
+      <dependency id="vscode" version="1.40.0" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
