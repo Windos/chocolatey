@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>materialproducticons-vscode</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/materialproducticons-vscode</packageSourceUrl>
+    <owners>Josh King</owners>
+    <title>Material Product Icons VSCode Extension</title>
+    <authors>Philipp Kief</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/b0650634a3014c104d4925a6578d3c190f12db24/_icons/materialproducticons-vscode.png</iconUrl>
+    <copyright>The MIT License (MIT) Copyright (c) 2021 Philipp Kief</copyright>
+    <licenseUrl>https://marketplace.visualstudio.com/items/PKief.material-product-icons/license</licenseUrl>
+    <projectSourceUrl>https://github.com/PKief/vscode-material-product-icons</projectSourceUrl>
+    <docsUrl>https://github.com/PKief/vscode-material-product-icons/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/PKief/vscode-material-product-icons/issues</bugTrackerUrl>
+    <tags>materialproducticons-vscode vscode extension theme materialproducticons</tags>
+    <summary>Product Icon Theme with Material Icons for VS Code</summary>
+    <description></description>
+    <releaseNotes>https://marketplace.visualstudio.com/items/PKief.material-product-icons/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
+      <dependency id="vscode" version="1.54.0" />
+    </dependencies>
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

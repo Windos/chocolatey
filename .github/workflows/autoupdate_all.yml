@@ -20,6 +20,7 @@ jobs:
           azureaccount-vscode,
           azurefunctions-vscode,
           materialicon-vscode,
+          materialproducticons-vscode,
           onedarkpro-vscode
         ]
 
