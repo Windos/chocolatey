@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        run: git checkout HEAD^
+      - run: git checkout HEAD^
 
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
