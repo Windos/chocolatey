@@ -27,6 +27,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
       - run: git checkout HEAD^
 
       - name: Install Chocolatey Automatic Package Updater Module
