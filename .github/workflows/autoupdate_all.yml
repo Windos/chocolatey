@@ -15,6 +15,7 @@ jobs:
     runs-on: windows-latest
 
     strategy:
+      max-parallel: 1
       matrix:
         package: [
           azureaccount-vscode,
@@ -26,6 +27,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        run: git checkout HEAD^
 
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
