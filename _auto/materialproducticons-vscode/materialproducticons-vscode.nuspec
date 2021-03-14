@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>materialproducticons-vscode</id>
-    <version>1.0.2</version>
+    <version>1.0.4</version>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/materialproducticons-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>Material Product Icons VSCode Extension</title>
