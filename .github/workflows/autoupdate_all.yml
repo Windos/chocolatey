@@ -27,6 +27,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: master
 
       - name: Install Chocolatey Automatic Package Updater Module
         run: Install-Module -Name AU -Force
