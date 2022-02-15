@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azureaccount-vscode</id>
-    <version>0.9.11</version>
+    <version>0.10.0</version>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/azureaccount-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>Azure Account VSCode Extension</title>
