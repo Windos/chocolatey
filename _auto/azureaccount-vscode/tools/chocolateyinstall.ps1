@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -ExtensionId 'ms-vscode.azure-account@0.11.3'
+Install-VsCodeExtension -ExtensionId 'ms-vscode.azure-account@0.11.4'
