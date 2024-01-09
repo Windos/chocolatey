@@ -4,26 +4,23 @@
   <metadata>
     <id>cinebench</id>
     <title>MAXON Cinebench</title>
-    <version>23.200</version>
+    <version>2024.1.0</version>
     <authors>MAXON Computer</authors>
     <owners>Windos</owners>
+    <packageSourceUrl>https://github.com/Windos/chocolatey</packageSourceUrl>
     <summary>Cinebench is a real-world cross platform test suite that evaluates your computer's performance capabilities.</summary>
     <description>Cinebench is a real-world cross-platform test suite that evaluates your computer's hardware capabilities. Improvements to Cinebench Release 23 reflect the overall advancements to CPU and rendering technology in recent years, providing a more accurate measurement of Cinema 4D's ability to take advantage of multiple CPU cores and modern processor features available to the average user. Best of all: It's free.
 
 Cinebench is the perfect tool to compare CPU and graphics performance across various systems and platforms.
 
 Only compatible with 64-bit Operating Systems.</description>
-    <projectUrl>http://www.maxon.net/products/cinebench</projectUrl>
+    <projectUrl>https://www.maxon.net/en/cinebench</projectUrl>
     <tags>cinebench maxon benchmark</tags>
     <copyright>Copyright MAXON Computer GmbH, MAXON Computer Inc., MAXON Computer Ltd.</copyright>
-    <licenseUrl>https://www.maxon.net/fileadmin/MAXON_Content/100_Administrative/30_Legal/EULA_R20/MAXON_R20_EULA_EN.PDF</licenseUrl>
+    <licenseUrl>https://www.maxon.net/en/legal/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/Windos/chocolatey/master/cinebench/cinebech.png</iconUrl>
-    <releaseNotes>* Cinebench R23 now supports Apple’s M1-powered computing systems.
-* Cinebench is now based on the latest Release 23 code using updated compilers, and has a minimum runtime activated by default (previously hidden in preferences).
-* Cinebench R23 provides improved benchmark accuracy for current and next generation CPUs to test if a machine runs stable on a high CPU load, if the cooling solution of a desktop or notebook is sufficient for longer running tasks to deliver the full potential of the CPU, and if a machine is able to handle demanding real-life 3D tasks.
-
-https://www.maxon.net/en/article/maxon-announces-cinema-4d-r23</releaseNotes>
+    <iconUrl>https://cdn.statically.io/gh/Windos/chocolatey/e8774217132f32389230545bd6ea8f5bfea1c5c8/cinebench/cinebech.png</iconUrl>
+    <releaseNotes>https://support.maxon.net/hc/en-us/sections/10379181139484-Cinebench</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
