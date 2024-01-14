@@ -1,7 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $referer = 'https://www.maxon.net/en/downloads/cinebench-2024-downloads'
-$useragent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
 $desktopicon = [System.IO.Path]::Combine(([System.Environment]::GetFolderPath("Desktop")), 'Cinebench 2024.lnk')
 $exeFile = Join-Path $toolsDir 'Cinebench.exe'
 
