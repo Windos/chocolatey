@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>elk-native</id>
+    <version>0.4.0</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/elk-native</packageSourceUrl>
+    <owners>Windos</owners>
+    <title>Elk Native</title>
+    <authors>Elk Native contributors</authors>
+    <projectUrl>https://github.com/elk-zone/elk-native</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/Windos/chocolatey@0bd79df6b3e7797bd2ba272356c1eb4491b9d661/elk-native/elk-native.png</iconUrl>
+    <copyright>© 2022-PRESENT Elk Native contributors</copyright>
+    <licenseUrl>https://github.com/elk-zone/elk-native/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/elk-zone/elk-native</projectSourceUrl>
+    <mailingListUrl>https://chat.elk.zone/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/elk-zone/elk-native/issues</bugTrackerUrl>
+    <tags>elk mastodon social</tags>
+    <summary>Native version of Elk, a nimble Mastodon web client.</summary>
+    <description>Native version of [Elk](https://github.com/elk-zone/elk), a nimble Mastodon web client.
+
+Elk Native is even more early alpha than the web version, but we would love your feedback and contributions. If you would like to help us with testing, feedback, or contributing, join our [discord](https://chat.elk.zone) and get involved.
+
+![Screenshot of the app, showing the federated timeline home](https://github.com/elk-zone/elk-native/raw/main/Screenshot-dark.png#gh-dark-mode-only)</description>
+    <releaseNotes>https://github.com/elk-zone/elk-native/releases/tag/elk-native-v0.4.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
