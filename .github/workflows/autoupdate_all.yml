@@ -31,7 +31,7 @@ jobs:
           ref: master
 
       - name: Install Chocolatey Automatic Package Updater Module
-        run: Install-Module -Name AU -Force
+        run: Install-Module -Name Chocolatey-AU -Force
 
       - name: Run ${{ matrix.package }} update script
         id: update
