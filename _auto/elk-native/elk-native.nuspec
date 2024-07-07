@@ -9,7 +9,7 @@
     <title>Elk Native</title>
     <authors>Elk Native contributors</authors>
     <projectUrl>https://github.com/elk-zone/elk-native</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/Windos/chocolatey@0bd79df6b3e7797bd2ba272356c1eb4491b9d661/_icons/elk-native.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/Windos/chocolatey/dcf00591b00f845dc7129364955daabd0ea1a382/_icons/elk-native.png</iconUrl>
     <copyright>© 2022-PRESENT Elk Native contributors</copyright>
     <licenseUrl>https://github.com/elk-zone/elk-native/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
