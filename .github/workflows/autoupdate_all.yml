@@ -20,6 +20,7 @@ jobs:
         package: [
           azureaccount-vscode,
           azurefunctions-vscode,
+          elk-native,
           materialicon-vscode,
           materialproducticons-vscode,
           onedarkpro-vscode
