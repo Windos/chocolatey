@@ -2,10 +2,13 @@ import-module Chocolatey-AU
 
 function global:au_GetLatest {
     $LatestRelease = Invoke-RestMethod -UseBasicParsing -Uri "https://api.github.com/repos/elk-zone/elk-native/releases/latest"
+    $LatestVersion = $LatestRelease.tag_name.Replace('elk-native-v', '')
+
+    Write-Output "newversion=$($LatestVersion)" >> $Env:GITHUB_OUTPUT
 
     @{
         URL64        = $LatestRelease.assets | Where-Object {$_.name.EndsWith("_windows_x86_64.msi")} | Select-Object -ExpandProperty browser_download_url
-        Version      = $LatestRelease.tag_name.Replace('elk-native-v', '')
+        Version      = $LatestVersion
         ReleaseNotes = $LatestRelease.html_url
     }
 }

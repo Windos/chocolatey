@@ -25,7 +25,7 @@ function global:au_GetLatest {
 
     $VSCodeManifest = Invoke-RestMethod -UseBasicParsing "$assetUri/Microsoft.VisualStudio.Code.Manifest"
 
-    Write-Host "::set-output name=newversion::$($VSCodeManifest.version)"
+    Write-Output "newversion=$($VSCodeManifest.version)" >> $Env:GITHUB_OUTPUT
 
     @{
         Version       = $VSCodeManifest.version

@@ -27,7 +27,7 @@ jobs:
         ]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: master
 
@@ -40,9 +40,9 @@ jobs:
           cd _auto\${{ matrix.package }}
           $UpdateOutput = .\update.ps1
           $NupkgPath = (($UpdateOutput.Result | Where-Object {$_ -like '*.nupkg''*'}) -split "'")[1]
-          Write-Host "::set-output name=NupkgPath::$NupkgPath"
+          Write-Output "NupkgPath=$($NupkgPath)" >> $Env:GITHUB_OUTPUT
           $UpdateStatus = if ($UpdateOutput.Result -match 'No new version found') {'No Update'} else {'Update Available'}
-          Write-Host "::set-output name=UpdateStatus::$UpdateStatus"
+          Write-Output "UpdateStatus=$($UpdateStatus)" >> $Env:GITHUB_OUTPUT
 
       - name: Test ${{ matrix.package }} install
         run: Test-Package -Install -Nu ${{ steps.update.outputs.NupkgPath }}
