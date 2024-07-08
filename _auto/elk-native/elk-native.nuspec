@@ -4,7 +4,7 @@
   <metadata>
     <id>elk-native</id>
     <version>0.4.0</version>
-    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/elk-native</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/elk-native</packageSourceUrl>
     <owners>Windos</owners>
     <title>Elk Native</title>
     <authors>Elk Native contributors</authors>
