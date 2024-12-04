@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -ExtensionId 'zhuangtongfa.Material-theme@3.17.6'
+Install-VsCodeExtension -ExtensionId 'zhuangtongfa.Material-theme@3.17.7'
