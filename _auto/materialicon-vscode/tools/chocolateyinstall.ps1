@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -ExtensionId 'PKief.material-icon-theme@5.36.1'
+Install-VsCodeExtension -ExtensionId 'PKief.material-icon-theme@5.37.0'
