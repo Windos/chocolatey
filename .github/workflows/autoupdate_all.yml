@@ -19,6 +19,7 @@ jobs:
       max-parallel: 1
       matrix:
         package: [
+          cinebench,
           elk-native,
           loki,
           materialicon-vscode,
