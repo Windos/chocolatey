@@ -1,0 +1,2 @@
+x64=https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip|WTWU6n3IOF25dy2uuZqxrQ==
+arm64=https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_arm64.zip|+lOhbblvF7A9AjtE6A6+KA==

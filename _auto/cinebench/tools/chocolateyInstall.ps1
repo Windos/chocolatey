@@ -1,12 +1,12 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $referer     = 'https://www.maxon.net/en/downloads/cinebench-downloads'
 $desktopPath = [System.Environment]::GetFolderPath('Desktop')
 
 $url64         = 'https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip'
-$checksum64    = ''
+$checksum64    = 'a781ab88cbb7fa65855b4a997ab22f432e4db0fbdf9240114cf5486d8d4efb2d'
 $urlArm64      = 'https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_arm64.zip'
-$checksumArm64 = ''
+$checksumArm64 = 'cb6c765f80d53e1fe702de145b6da1c67af5b37d5a399c8f3396a7ecfed78159'
 
 # Ask WMI for the processor's architecture (12 = ARM64), as the environment
 # variables report AMD64 to processes running under x64 emulation.

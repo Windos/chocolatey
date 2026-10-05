@@ -4,7 +4,7 @@
   <metadata>
     <id>cinebench</id>
     <title>MAXON Cinebench</title>
-    <version>2024.1.0</version>
+    <version>2026.1.3</version>
     <authors>MAXON Computer</authors>
     <owners>Windos</owners>
     <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/cinebench</packageSourceUrl>
