@@ -1,0 +1,21 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded VSIX has been downloaded from the Visual Studio Marketplace, the
+official distribution point for the Material Product Icons extension:
+https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons
+
+It can be verified by:
+
+1. Downloading the VSIX from:
+   url: https://PKief.gallerycdn.vsassets.io/extensions/pkief/material-product-icons/1.7.1/1720860434568/Microsoft.VisualStudio.Services.VSIXPackage
+
+2. Getting its checksum, for example with PowerShell:
+   Get-FileHash -Path <downloaded file> -Algorithm SHA256
+
+3. Comparing it to the checksum below:
+   checksum type: sha256
+   checksum: 9276111b88fc714e9facb5d2a70bda4b213e11615dd677bf72d61ae64aa9e5bc
+
+The file 'LICENSE.txt' has been obtained from the VSIX (extension/LICENSE.md).
