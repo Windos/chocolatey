@@ -19,7 +19,6 @@ jobs:
       max-parallel: 1
       matrix:
         package: [
-          azureaccount-vscode,
           elk-native,
           materialicon-vscode,
           materialproducticons-vscode,
