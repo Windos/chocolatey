@@ -31,8 +31,10 @@ jobs:
         with:
           ref: master
 
+      # PSResourceGet ships with PowerShell 7.4+, and installs far faster than
+      # Install-Module, which first has to bootstrap the NuGet provider.
       - name: Install Chocolatey Automatic Package Updater Module
-        run: Install-Module -Name Chocolatey-AU -Force
+        run: Install-PSResource -Name Chocolatey-AU -TrustRepository
 
       - name: Run ${{ matrix.package }} update script
         id: update
