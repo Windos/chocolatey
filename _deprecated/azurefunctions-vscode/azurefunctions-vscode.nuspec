@@ -4,7 +4,7 @@
   <metadata>
     <id>azurefunctions-vscode</id>
     <version>1.22.2.20261005</version>
-    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/azurefunctions-vscode</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_deprecated/azurefunctions-vscode</packageSourceUrl>
     <owners>Josh King</owners>
     <title>[Deprecated] Azure Functions VSCode Extension</title>
     <authors>Microsoft</authors>
