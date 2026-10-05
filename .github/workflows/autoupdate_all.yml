@@ -61,5 +61,5 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply Choco package update - ${{ matrix.package }} ${{ steps.update.outputs.newversion }}
-          file_pattern: '*.nuspec *.ps1'
+          file_pattern: '*.nuspec *.ps1 *.txt'
         if: steps.update.outputs.UpdateStatus == 'Update Available'
