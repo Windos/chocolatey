@@ -20,6 +20,7 @@ jobs:
       matrix:
         package: [
           elk-native,
+          loki,
           materialicon-vscode,
           materialproducticons-vscode,
           onedarkpro-vscode

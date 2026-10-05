@@ -37,3 +37,4 @@ Icon
 
 *.nupkg
 *.vsix
+*.exe
