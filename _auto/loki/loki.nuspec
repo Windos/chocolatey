@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>loki</id>
+    <version>3.5.5</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/loki</packageSourceUrl>
+    <owners>Windos</owners>
+    <title>Loki</title>
+    <authors>Grafana team</authors>
+    <projectUrl>https://grafana.com/oss/loki</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/Windos/chocolatey@master/_icons/loki.png</iconUrl>
+    <copyright>GrafanaLabs</copyright>
+    <licenseUrl>https://github.com/grafana/loki/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/grafana/loki</projectSourceUrl>
+    <docsUrl>https://grafana.com/docs/loki/latest/</docsUrl>
+    <mailingListUrl>https://community.grafana.com/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/grafana/loki/issues</bugTrackerUrl>
+    <tags>admin server logs grafana foss cross-platform</tags>
+    <summary>Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus</summary>
+    <description><![CDATA[Grafana Loki is a set of components that can be composed into a fully featured logging stack.
+
+Unlike other logging systems, Loki is built around the idea of only indexing metadata about your logs: labels (just like Prometheus labels). Log data itself is then compressed and stored in chunks in object stores such as S3 or GCS, or even locally on the filesystem. A small index and highly compressed chunks simplifies the operation and significantly lowers the cost of Loki.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+]]></description>
+    <releaseNotes>https://github.com/grafana/loki/releases/tag/v3.5.5</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
