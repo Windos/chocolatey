@@ -3,12 +3,26 @@
 
 import-module Chocolatey-AU
 
-function global:au_BeforeUpdate($Package) {}
+# The VSIX is embedded so the install doesn't depend on VS Code reaching the
+# Marketplace, which has been timing out in the CCR package verifier.
+function global:au_BeforeUpdate($Package) {
+    Remove-Item ".\tools\*.vsix" -ErrorAction SilentlyContinue
+
+    $Latest.FileName = "zhuangtongfa.Material-theme-$($Latest.RemoteVersion).vsix"
+    $FilePath = ".\tools\$($Latest.FileName)"
+    Invoke-WebRequest -UseBasicParsing -Uri $Latest.URL -OutFile $FilePath
+    $Latest.Checksum = (Get-FileHash -Path $FilePath -Algorithm SHA256).Hash.ToLower()
+}
 
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(zhuangtongfa.Material-theme@)[^']*" = "`${1}$($Latest.RemoteVersion)"
+            "(zhuangtongfa\.Material-theme-).*(\.vsix)" = "`${1}$($Latest.RemoteVersion)`${2}"
+        }
+
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(^\s*url:\s*).*"      = "`${1}$($Latest.URL)"
+            "(?i)(^\s*checksum:\s*).*" = "`${1}$($Latest.Checksum)"
         }
     }
 }
@@ -30,6 +44,7 @@ function global:au_GetLatest {
     @{
         Version       = $VSCodeManifest.version
         RemoteVersion = $VSCodeManifest.version
+        URL           = "$AssetUri/Microsoft.VisualStudio.Services.VSIXPackage"
     }
 }
 

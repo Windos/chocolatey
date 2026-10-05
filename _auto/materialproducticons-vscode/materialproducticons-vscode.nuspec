@@ -35,5 +35,6 @@ The extension will automatically update within VS Code going forward.
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
