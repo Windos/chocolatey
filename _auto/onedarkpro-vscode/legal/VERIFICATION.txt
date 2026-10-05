@@ -1,0 +1,21 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded VSIX has been downloaded from the Visual Studio Marketplace, the
+official distribution point for the One Dark Pro extension:
+https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme
+
+It can be verified by:
+
+1. Downloading the VSIX from:
+   url: https://zhuangtongfa.gallerycdn.vsassets.io/extensions/zhuangtongfa/material-theme/3.20.2/1786670803832/Microsoft.VisualStudio.Services.VSIXPackage
+
+2. Getting its checksum, for example with PowerShell:
+   Get-FileHash -Path <downloaded file> -Algorithm SHA256
+
+3. Comparing it to the checksum below:
+   checksum type: sha256
+   checksum: 27b1db3e9f6d8fa0e812e38f214fda4449dc6d63e28f9a9854b24e76ea5c41d0
+
+The file 'LICENSE.txt' has been obtained from the VSIX (extension/LICENSE.txt).
