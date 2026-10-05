@@ -20,7 +20,6 @@ jobs:
       matrix:
         package: [
           azureaccount-vscode,
-          azurefunctions-vscode,
           elk-native,
           materialicon-vscode,
           materialproducticons-vscode,

@@ -3,13 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>azurefunctions-vscode</id>
-    <version>1.22.2</version>
-    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/azurefunctions-vscode</packageSourceUrl>
+    <version>1.22.2.20261005</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/azurefunctions-vscode</packageSourceUrl>
     <owners>Josh King</owners>
-    <title>Azure Functions VSCode Extension</title>
+    <title>[Deprecated] Azure Functions VSCode Extension</title>
     <authors>Microsoft</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/511358ee44e0242b0ad3ec6495382b89232dfb11/_icons/azurefunctions-vscode.png</iconUrl>
     <copyright>Copyright (c) Microsoft Corporation. All rights reserved.</copyright>
     <licenseUrl>https://marketplace.visualstudio.com/items/ms-azuretools.vscode-azurefunctions/license</licenseUrl>
     <projectSourceUrl>https://github.com/Microsoft/vscode-azurefunctions</projectSourceUrl>
@@ -17,23 +16,17 @@
     <bugTrackerUrl>https://github.com/microsoft/vscode-azurefunctions/issues</bugTrackerUrl>
     <tags>azurefunctions-vscode vscode extension azurefunctions azure</tags>
     <summary>An Azure Functions extension for Visual Studio Code.</summary>
-    <description><![CDATA[Use the Azure Functions extension to quickly create, debug, manage, and deploy serverless apps directly from VS Code.
+    <description><![CDATA[**This package is deprecated.** It duplicates the [vscode-azurefunctions](https://community.chocolatey.org/packages/vscode-azurefunctions) package, which installs the same Azure Functions extension for Visual Studio Code.
 
-The purpose of this Chocolatey package is to perform the initial install of the Azure Functions extension for Visual Studio Code.
-The extension will automatically update within VS Code going forward.
-
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+This version installs nothing itself. It depends on vscode-azurefunctions, so upgrading this package moves you to that package. Use vscode-azurefunctions directly for new installs.
 ]]></description>
-    <releaseNotes>https://marketplace.visualstudio.com/items/ms-azuretools.vscode-azurefunctions/changelog</releaseNotes>
+    <releaseNotes>Deprecated in favour of the vscode-azurefunctions package.</releaseNotes>
     <dependencies>
-      <dependency id="chocolatey-vscode.extension" version="1.0.0" />
-      <dependency id="vscode" version="1.40.0" />
+      <dependency id="vscode-azurefunctions" version="1.22.0" />
     </dependencies>
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files />
 </package>
