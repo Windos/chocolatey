@@ -1,0 +1,23 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded tools\BurntToast.zip has been downloaded from the BurntToast
+release on GitHub, the official distribution point for BurntToast:
+https://github.com/Windos/BurntToast/releases/tag/v1.1.0
+
+It can be verified by:
+
+1. Downloading the zip from:
+   url: https://github.com/Windos/BurntToast/releases/download/v1.1.0/BurntToast.zip
+
+2. Getting its checksum, for example with PowerShell:
+   Get-FileHash -Path <downloaded file> -Algorithm SHA256
+
+3. Comparing it to the checksum below:
+   checksum type: sha256
+   checksum: 0f32d6026d17801078b7763ea403f046e93553d5413511fd0a865035dee8e823
+
+The file 'LICENSE.txt' has been obtained from:
+https://github.com/Windos/BurntToast/blob/main/LICENSE
+with the licenses of the module's bundled third-party components added.

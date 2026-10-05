@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>burnttoast-psmodule</id>
+    <version>1.1.0</version>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_manual/burnttoast-psmodule</packageSourceUrl>
+    <owners>Windos</owners>
+    <title>BurntToast (Install)</title>
+    <authors>Joshua King</authors>
+    <projectUrl>https://github.com/Windos/BurntToast</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/BurntToast/3dd8dd7457552056da4bbd27880f8283e1116395/Media/BurntToast-Logo.png</iconUrl>
+    <copyright>Copyright (c) Joshua King</copyright>
+    <licenseUrl>https://github.com/Windos/BurntToast/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Windos/BurntToast</projectSourceUrl>
+    <docsUrl>https://github.com/Windos/BurntToast/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Windos/BurntToast/issues</bugTrackerUrl>
+    <tags>burnttoast toast notifications windows10 utilities powershell</tags>
+    <summary>Module for creating and displaying Toast Notifications on Microsoft Windows 10.</summary>
+    <description><![CDATA[BurntToast is a PowerShell module for creating and displaying Toast Notifications on Microsoft Windows 10 and later.
+
+This Chocolatey package installs the BurntToast module for all users. The module is embedded in the package, so installing it does not need access to the PowerShell Gallery. Any existing all-users copy of BurntToast, such as one installed by earlier versions of this package, is replaced.
+
+**Please Note**: The BurntToast project has been archived, and 1.1.0 is its final release.
+]]></description>
+    <releaseNotes>https://github.com/Windos/BurntToast/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
