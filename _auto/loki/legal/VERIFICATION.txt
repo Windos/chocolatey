@@ -9,14 +9,14 @@ https://github.com/grafana/loki/releases
 It can be verified by:
 
 1. Downloading the release zip from:
-   url: https://github.com/grafana/loki/releases/download/v3.5.5/loki-windows-amd64.exe.zip
+   url: https://github.com/grafana/loki/releases/download/v3.7.8/loki-windows-amd64.exe.zip
 
 2. Getting the zip's checksum, for example with PowerShell:
    Get-FileHash -Path <downloaded file> -Algorithm SHA256
 
 3. Comparing it to the checksum below:
    checksum type: sha256
-   checksum: 56b4b04cd62f0ceba772b34cf81366f3c1212f429da1e0a9018ac27cdbe4f6d1
+   checksum: 622efc553df799ebb022c2e6c4b45792f726c54b008cb65126b99ae67be3a827
 
 4. Extracting loki-windows-amd64.exe from the zip and comparing it to the
    file in this package's tools folder.
