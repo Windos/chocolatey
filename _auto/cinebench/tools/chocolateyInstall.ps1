@@ -31,9 +31,16 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
+# Chocolatey shims every .exe in the package. Only Cinebench itself should get
+# one, marked as a GUI app so the shim doesn't wait for it to exit.
+Get-ChildItem -Path $toolsDir -Filter '*.exe' -Recurse | ForEach-Object {
+  $marker = if ($_.Name -eq 'Cinebench.exe') { 'gui' } else { 'ignore' }
+  New-Item -Path "$($_.FullName).$marker" -ItemType File -Force | Out-Null
+}
+
 # Earlier versions of this package created a 'Cinebench 2024' shortcut.
 Remove-Item -Path (Join-Path $desktopPath 'Cinebench 2024.lnk') -Force -ErrorAction SilentlyContinue
 
-# The zip extracts into a versioned folder, so find the executable within it.
+# The zip may extract into a versioned folder, so find the executable within it.
 $exeFile = Get-ChildItem -Path $toolsDir -Filter 'Cinebench.exe' -Recurse | Select-Object -First 1
 Install-ChocolateyShortcut -ShortcutFilePath (Join-Path $desktopPath 'Cinebench.lnk') -TargetPath $exeFile.FullName
