@@ -7,19 +7,21 @@
     <version>2024.1.0</version>
     <authors>MAXON Computer</authors>
     <owners>Windos</owners>
-    <packageSourceUrl>https://github.com/Windos/chocolatey</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Windos/chocolatey/tree/master/_auto/cinebench</packageSourceUrl>
     <summary>Cinebench is a real-world cross platform test suite that evaluates your computer's performance capabilities.</summary>
-    <description>Cinebench is a real-world cross-platform test suite that evaluates your computer's hardware capabilities. Improvements to Cinebench Release 23 reflect the overall advancements to CPU and rendering technology in recent years, providing a more accurate measurement of Cinema 4D's ability to take advantage of multiple CPU cores and modern processor features available to the average user. Best of all: It's free.
+    <description>Cinebench is a real-world cross-platform test suite that evaluates your computer's hardware capabilities. Cinebench 2026 uses Redshift, Cinema 4D's default rendering engine, to evaluate your computer's CPU and GPU capabilities. Best of all: It's free.
 
 Cinebench is the perfect tool to compare CPU and graphics performance across various systems and platforms.
 
-Only compatible with 64-bit Operating Systems.</description>
+Only compatible with 64-bit Operating Systems. On Windows on Arm, the native Arm64 build is installed.
+
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.</description>
     <projectUrl>https://www.maxon.net/en/cinebench</projectUrl>
     <tags>cinebench maxon benchmark</tags>
     <copyright>Copyright MAXON Computer GmbH, MAXON Computer Inc., MAXON Computer Ltd.</copyright>
     <licenseUrl>https://www.maxon.net/en/legal/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.statically.io/gh/Windos/chocolatey/e8774217132f32389230545bd6ea8f5bfea1c5c8/cinebench/cinebech.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/Windos/chocolatey@master/_icons/cinebench.png</iconUrl>
     <releaseNotes>https://support.maxon.net/hc/en-us/sections/10379181139484-Cinebench</releaseNotes>
   </metadata>
   <files>

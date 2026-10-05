@@ -1,0 +1,39 @@
+$ErrorActionPreference = 'Stop'
+$toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$referer     = 'https://www.maxon.net/en/downloads/cinebench-downloads'
+$desktopPath = [System.Environment]::GetFolderPath('Desktop')
+
+$url64         = 'https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_x86_64.zip'
+$checksum64    = ''
+$urlArm64      = 'https://mx-app-blob-prod.maxon.net/mx-package-production/website/windows/maxon/cinebench/Cinebench2026_win_arm64.zip'
+$checksumArm64 = ''
+
+# Ask WMI for the processor's architecture (12 = ARM64), as the environment
+# variables report AMD64 to processes running under x64 emulation.
+$isArm64 = (Get-CimInstance -ClassName Win32_Processor | Select-Object -First 1).Architecture -eq 12
+
+$options = @{
+  Headers = @{
+    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'Accept-Language' = 'en-US,en-CA;q=0.9,en;q=0.8'
+    Referer = $referer
+  }
+}
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  url64bit       = if ($isArm64) { $urlArm64 } else { $url64 }
+  checksum64     = if ($isArm64) { $checksumArm64 } else { $checksum64 }
+  checksumType64 = 'sha256'
+  unzipLocation  = $toolsDir
+  options        = $options
+}
+
+Install-ChocolateyZipPackage @packageArgs
+
+# Earlier versions of this package created a 'Cinebench 2024' shortcut.
+Remove-Item -Path (Join-Path $desktopPath 'Cinebench 2024.lnk') -Force -ErrorAction SilentlyContinue
+
+# The zip extracts into a versioned folder, so find the executable within it.
+$exeFile = Get-ChildItem -Path $toolsDir -Filter 'Cinebench.exe' -Recurse | Select-Object -First 1
+Install-ChocolateyShortcut -ShortcutFilePath (Join-Path $desktopPath 'Cinebench.lnk') -TargetPath $exeFile.FullName

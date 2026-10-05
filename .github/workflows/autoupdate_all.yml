@@ -19,6 +19,7 @@ jobs:
       max-parallel: 1
       matrix:
         package: [
+          cinebench,
           elk-native,
           loki,
           materialicon-vscode,
@@ -31,8 +32,10 @@ jobs:
         with:
           ref: master
 
+      # PSResourceGet ships with PowerShell 7.4+, and installs far faster than
+      # Install-Module, which first has to bootstrap the NuGet provider.
       - name: Install Chocolatey Automatic Package Updater Module
-        run: Install-Module -Name Chocolatey-AU -Force
+        run: Install-PSResource -Name Chocolatey-AU -TrustRepository
 
       - name: Run ${{ matrix.package }} update script
         id: update
@@ -57,7 +60,7 @@ jobs:
         if: steps.update.outputs.UpdateStatus == 'Update Available'
 
       - name: Commit Updated nuspec
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Apply Choco package update - ${{ matrix.package }} ${{ steps.update.outputs.newversion }}
           file_pattern: '*.nuspec *.ps1 *.txt'
