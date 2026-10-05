@@ -17,7 +17,7 @@
     <copyright>CloneSpy</copyright>
     <licenseUrl>http://www.clonespy.com/?Disclaimer</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/_manual/clonespy/clonespy-ico.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/Windos/chocolatey/6780282cfb740c9702f29531811b17d21f40088c/clonespy/clonespy-ico.png</iconUrl>
     <releaseNotes>Changes in 3.43
 
 * Added: You can now exclude sub-folders when marking or unmarking files in a folder via the context menu of the list box in the All duplicates window.
