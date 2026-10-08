@@ -9,13 +9,13 @@ https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme
 It can be verified by:
 
 1. Downloading the VSIX from:
-   url: https://zhuangtongfa.gallerycdn.vsassets.io/extensions/zhuangtongfa/material-theme/3.20.2/1786670803832/Microsoft.VisualStudio.Services.VSIXPackage
+   url: https://zhuangtongfa.gallerycdn.vsassets.io/extensions/zhuangtongfa/material-theme/3.20.3/1791418918757/Microsoft.VisualStudio.Services.VSIXPackage
 
 2. Getting its checksum, for example with PowerShell:
    Get-FileHash -Path <downloaded file> -Algorithm SHA256
 
 3. Comparing it to the checksum below:
    checksum type: sha256
-   checksum: 27b1db3e9f6d8fa0e812e38f214fda4449dc6d63e28f9a9854b24e76ea5c41d0
+   checksum: 745ef74d6573162487f96dd9478a2879ca67838020e881ad9c4a07f1452bba0b
 
 The file 'LICENSE.txt' has been obtained from the VSIX (extension/LICENSE.txt).
